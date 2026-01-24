@@ -250,12 +250,7 @@ If you launched it via Aspire and the port is not 5000, copy the MCP URL from th
 ## 6. Join the Microsoft AI Community of Interest
 
 - https://aka.ms/garage/skillupai
-
----
-
-## 7. Watch Scott Hanselman harness GitHub Copilot CLI
-
-- https://microsoft.sharepoint.com/teams/GarageCentral/_layouts/15/stream.aspx?id=%2Fteams%2FGarageCentral%2FVideos%2FThe+Garage+Recordings%2FTwitch+But+Internal-20260123_234519UTC-Meeting+Recording.mp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.823ace8b-bd9c-4db2-a854-89e53c730d89&ga=1&startedResponseCatch=true&isDarkMode=true
+- Watch Scott Hanselman harness GitHub Copilot CLI w/ MCP and Copilot Skills
 
 ---
 
