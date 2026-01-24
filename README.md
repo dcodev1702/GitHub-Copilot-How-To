@@ -9,7 +9,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 ## 0. Set up a GitHub account
 
 1. Create a GitHub account: https://github.com/
-2. Install the GitHub Mobile app.
+2. Install the GitHub Mobile app on your mobile device.
 3. Enable 2FA (two-factor authentication) on your GitHub account.
    - Recommended: configure 2FA so you can approve sign-ins from the mobile app.
 
