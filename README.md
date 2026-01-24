@@ -167,6 +167,9 @@ Join here:
 
 ## 5. Install GitHub Copilot CLI
 
+<img width="1602" height="753" alt="image" src="https://github.com/user-attachments/assets/c392f837-3a14-4645-a330-bb363303d093" />
+
+
 ### Confirm Copilot access
 
 1. Go to: https://copilot.github.microsoft.com/
