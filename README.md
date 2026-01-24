@@ -150,14 +150,7 @@ The docs’ default local endpoint is typically `http://localhost:5000/mcp` (rep
 
 ---
 
-## 3. Join the GitHub Copilot CLI Teams channel
-
-Join here:
-- https://teams.microsoft.com/l/channel/19%3A3a10724f969043c3aab0d68a939500d1%40thread.tacv2/Copilot%20CLI?groupId=5f134ecd-5789-499a-b782-1f6f2dec34de&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47
-
----
-
-## 4. Install PowerShell 7 (recommended)
+## 3. Install PowerShell 7 (recommended)
 
 1. Install **PowerShell 7** from the Microsoft Store.
 2. Set it as the default profile:
@@ -168,7 +161,7 @@ Join here:
 
 ---
 
-## 5. Install GitHub Copilot CLI
+## 4. Install GitHub Copilot CLI
 
 <img width="1602" height="753" alt="image" src="https://github.com/user-attachments/assets/b546b6bd-1e9c-4717-9ee6-86807145abcf" />
 
@@ -256,7 +249,7 @@ If you launched it via Aspire and the port is not 5000, copy the MCP URL from th
 
 ---
 
-## 6. Join the Microsoft AI Community of Interest
+## 5. Join the Microsoft AI Community of Interest
 
 - https://aka.ms/garage/skillupai
 - Watch Scott Hanselman harness GitHub Copilot CLI w/ MCP and Copilot Skills
