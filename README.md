@@ -1,6 +1,6 @@
 # GitHub Copilot and GitHub Copilot CLI for Microsoft FTEs
 
-This beginner-friendly guide walks you through getting GitHub Copilot working in **VS Code** and installing **GitHub Copilot CLI**, plus how to configure **MCP servers** (Model Context Protocol) for richer, tool-backed prompts.
+This beginner-friendly guide walks you through setting up GitHub Copilot in **VS Code** and installing **GitHub Copilot CLI**, plus how to configure **MCP servers** (Model Context Protocol) for richer, tool-backed prompts.
 
 > Tip: Keep your personal GitHub account secure (strong password + 2FA) since it becomes your primary identity for Copilot access.
 
