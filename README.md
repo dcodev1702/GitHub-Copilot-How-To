@@ -173,9 +173,9 @@ Join here:
 ### Confirm Copilot access
 
 1. Go to: https://copilot.github.microsoft.com/
-2. Confirm it recognizes you as connected/eligible for Copilot.
+2. Confirm it recognizes you as connected/eligible for GitHub Copilot.
 
-### Install via winget
+### Install GitHub Copilot CLI via winget
 
 Open **PowerShell 7** and run:
 
