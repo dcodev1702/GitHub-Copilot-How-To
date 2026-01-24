@@ -5,6 +5,9 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 > Tip: Keep your personal GitHub account secure (strong password + 2FA) since it becomes your primary identity for Copilot access.
 
 ---
+## What can GitHub Copilot CLI do??
+
+[GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
 
 ## 0. Set up a GitHub account
 
