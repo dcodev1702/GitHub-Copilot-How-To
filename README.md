@@ -160,6 +160,8 @@ Join here:
 2. Set it as the default profile:
    - Open **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell 7** → **Save**
 
+<img width="1300" height="1017" alt="image" src="https://github.com/user-attachments/assets/9ed141e7-7467-4f92-be7f-c1962ee22d32" />
+
 ---
 
 ## 5. Install GitHub Copilot CLI
