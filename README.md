@@ -262,3 +262,7 @@ If you launched it via Aspire and the port is not 5000, copy the MCP URL from th
   - https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-overview
 - GitHub Copilot documentation:
   - https://docs.github.com/en/copilot
+- John Saville YouTube Channel
+  - https://www.youtube.com/@NTFAQGuy
+- Azure Friday's
+  - https://azurefriday.com/
