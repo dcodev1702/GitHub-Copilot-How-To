@@ -6,7 +6,7 @@ This beginner-friendly guide walks you through getting GitHub Copilot working in
 
 ---
 
-## 0) Set up a GitHub account
+## 0. Set up a GitHub account
 
 1. Create a GitHub account: https://github.com/
 2. Install the GitHub Mobile app.
@@ -18,7 +18,7 @@ Helpful link:
 
 ---
 
-## 1) Set up GitHub Copilot (Microsoft FTE flow)
+## 1. Set up GitHub Copilot (Microsoft FTE flow)
 
 ### Link your Microsoft corporate identity to your personal GitHub account
 
@@ -31,7 +31,7 @@ Notes:
 
 ---
 
-## 2) VS Code integration with GitHub Copilot
+## 2. VS Code integration with GitHub Copilot
 
 ### Install the right extensions
 
@@ -53,7 +53,7 @@ Notes:
 
 ---
 
-## 2.5) Add MCP Servers to GitHub Copilot in VS Code
+## 2.5 Add MCP Servers to GitHub Copilot in VS Code
 
 MCP servers let Copilot Chat call trusted tools and retrieve grounded information (docs, browser automation, etc.).
 
@@ -136,14 +136,14 @@ The docs’ default local endpoint is typically `http://localhost:5000/mcp` (rep
 
 ---
 
-## 3) Join the GitHub Copilot CLI Teams channel
+## 3. Join the GitHub Copilot CLI Teams channel
 
 Join here:
 - https://teams.microsoft.com/l/channel/19%3A3a10724f969043c3aab0d68a939500d1%40thread.tacv2/Copilot%20CLI?groupId=5f134ecd-5789-499a-b782-1f6f2dec34de&tenantId=72f988bf-86f1-41af-91ab-2d7cd011db47
 
 ---
 
-## 4) Install PowerShell 7 (recommended)
+## 4. Install PowerShell 7 (recommended)
 
 1. Install **PowerShell 7** from the Microsoft Store.
 2. Set it as the default profile:
@@ -151,7 +151,7 @@ Join here:
 
 ---
 
-## 5) Install GitHub Copilot CLI
+## 5. Install GitHub Copilot CLI
 
 ### Confirm Copilot access
 
@@ -236,13 +236,13 @@ If you launched it via Aspire and the port is not 5000, copy the MCP URL from th
 
 ---
 
-## 6) Join the Microsoft AI Community of Interest
+## 6. Join the Microsoft AI Community of Interest
 
 - https://aka.ms/garage/skillupai
 
 ---
 
-## 7) Watch Scott Hanselman harness GitHub Copilot CLI
+## 7. Watch Scott Hanselman harness GitHub Copilot CLI
 
 - https://microsoft.sharepoint.com/teams/GarageCentral/_layouts/15/stream.aspx?id=%2Fteams%2FGarageCentral%2FVideos%2FThe+Garage+Recordings%2FTwitch+But+Internal-20260123_234519UTC-Meeting+Recording.mp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.823ace8b-bd9c-4db2-a854-89e53c730d89&ga=1&startedResponseCatch=true&isDarkMode=true
 
