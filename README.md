@@ -109,6 +109,10 @@ Create or edit this file:
 }
 ```
 
+Obtain context7 API KEY
+- Go to context7 and create an account to obtain an API KEY and insert that key into your mcp.json and mcp-config.json files
+- Context7: https://context7.com/
+
 Optional next steps (common troubleshooting):
 - Restart VS Code after editing `mcp.json`.
 - If a server requires Node, install a recent Node.js LTS.
