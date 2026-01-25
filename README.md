@@ -124,6 +124,7 @@ Optional next steps (common troubleshooting):
 ### Add Aspire (SQL MCP Server) as an MCP server
 
 If you’re using **.NET Aspire** to run a local **SQL MCP Server** (powered by Data API builder), the MCP endpoint is an **HTTP URL that ends in `/mcp`**.
+Manual Instructions / Setup can be found [HERE](https://aspire.dev/dashboard/mcp-server/)
 
 Important notes:
 - If you’re running via Aspire, the **host port can be dynamic**. The easiest way to get the exact URL is:
