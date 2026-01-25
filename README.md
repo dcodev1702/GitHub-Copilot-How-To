@@ -76,7 +76,7 @@ Create or edit this file:
 ### Copy/paste this JSON into `mcp.json`
 
 > Security note: If you use Context7, do **not** paste your real key into shared docs. Keep it local.
-
+> Configuration note: The format / structure for mcp.json is **different** than mcp-config.json (GitHub Copilot CLI)
 ```json
 {
 	"servers": {
