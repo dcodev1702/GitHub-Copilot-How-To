@@ -79,36 +79,38 @@ Create or edit this file:
 
 ```json
 {
-  "mcpServers": {
-    "WorkIQ": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@microsoft/workiq",
-        "mcp"
-      ],
-      "tools": ["*"]
-    },
-    "MicrosoftLearn": {
-      "type": "http",
-      "url": "https://learn.microsoft.com/api/mcp",
-      "tools": ["*"]
-    },
-    "Playwright": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["@playwright/mcp@latest"],
-      "tools": ["*"]
-    },
-    "Context7": {
-      "type": "http",
-      "url": "https://mcp.context7.com/mcp",
-      "headers": {
-        "CONTEXT7_API_KEY": "ADD_YOUR_API_KEY_HERE"
-      },
-      "tools": ["*"]
-    }
-  }
+	"servers": {
+		"playwright": {
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest"
+			],
+			"type": "stdio"
+		},
+		"context7": {
+			"type": "http",
+			"url": "https://mcp.context7.com/mcp",
+			"headers": {
+				"CONTEXT7_API_KEY": "ADD_YOUR_API_KEY_HERE"
+			}
+		},
+		"microsoft/playwright-mcp": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "0.0.1-seed"
+		},
+		"Microsoft Learn - MCP": {
+			"type": "http",
+			"url": "https://learn.microsoft.com/api/mcp",
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.0"
+		}
+	},
+	"inputs": []
 }
 ```
 
