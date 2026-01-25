@@ -272,6 +272,8 @@ If you launched it via Aspire and the port is not 5000, copy the MCP URL from th
 
 ## Additional resources
 
+- Microsoft GitHub Copilot SDK
+  - https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/
 - Microsoft Graph MCP Server overview:
   - https://learn.microsoft.com/en-us/graph/mcp-server/overview
 - Microsoft Sentinel (data lake) MCP overview:
