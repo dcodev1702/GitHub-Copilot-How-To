@@ -179,6 +179,12 @@ Open **PowerShell 7** and run:
 winget install github.copilot
 ```
 
+Run **GitHub Copilot CLI** 
+
+```powershell
+copilot
+```
+
 ### Sign in and select a model
 
 1. Open the Copilot CLI experience and sign in when prompted.
