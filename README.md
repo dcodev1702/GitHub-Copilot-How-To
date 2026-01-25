@@ -256,7 +256,11 @@ If you launched it via Aspire and the port is not 5000, copy the MCP URL from th
 
 ---
 
-## 5. Join the Microsoft AI Community of Interest
+## 5. GitHub Copilot CLI How-To's
+
+- https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli
+
+## 6. Join the Microsoft AI Community of Interest
 
 - https://aka.ms/garage/skillupai
 - Watch Scott Hanselman harness GitHub Copilot CLI w/ MCP and Copilot Skills
