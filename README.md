@@ -104,15 +104,6 @@ Create or edit this file:
 				"CONTEXT7_API_KEY": "ADD_YOUR_API_KEY_HERE"
 			}
 		},
-		"microsoft/playwright-mcp": {
-			"type": "stdio",
-			"command": "npx",
-			"args": [
-				"@playwright/mcp@latest"
-			],
-			"gallery": "https://api.mcp.github.com",
-			"version": "0.0.1-seed"
-		},
 		"Microsoft Learn - MCP": {
 			"type": "http",
 			"url": "https://learn.microsoft.com/api/mcp",
