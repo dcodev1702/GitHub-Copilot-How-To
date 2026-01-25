@@ -15,11 +15,8 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
    2️⃣ Run the installer
 
 		During setup:
-		
 		✅ Leave npm package manager checked
-		
 		✅ Leave Add to PATH checked
-		
 		✅ Accept defaults (don’t overthink it)
 		
 		Finish the install.
