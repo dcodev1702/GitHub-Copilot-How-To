@@ -9,11 +9,23 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
 
-## 0. Set up a GitHub account
+## 0. Set up NodeJS and a GitHub account
 
-1. Create a GitHub account: https://github.com/
-2. Install the GitHub Mobile app on your mobile device.
-3. Enable 2FA (two-factor authentication) on your GitHub account.
+1. Install NodeJS here: https://nodejs.org/en
+   2️⃣ Run the installer
+
+		During setup:
+		
+		✅ Leave npm package manager checked
+		
+		✅ Leave Add to PATH checked
+		
+		✅ Accept defaults (don’t overthink it)
+		
+		Finish the install.
+3. Create a GitHub account: https://github.com/
+4. Install the GitHub Mobile app on your mobile device.
+5. Enable 2FA (two-factor authentication) on your GitHub account.
    - Recommended: configure 2FA so you can approve sign-ins from the mobile app.
 
 Helpful link:
