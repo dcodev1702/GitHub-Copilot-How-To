@@ -12,7 +12,8 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 ## 0. Set up NodeJS and a GitHub account
 
 1. Install NodeJS here: https://nodejs.org/en
-   2️⃣ Run the installer
+   
+   1️⃣ Run the installer
 
 		During setup:
 		✅ Leave npm package manager checked
