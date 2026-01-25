@@ -49,7 +49,7 @@ Notes:
 1. In VS Code, open **Accounts** (person icon) → sign in.
 2. Sign in using the **personal GitHub account** that you linked to your Microsoft corporate account.
 
-### Verify Copilot Chat + model picker
+### Verify Copilot Chat + model selector
 
 1. Open the **GitHub Copilot Chat** panel (chat icon near the top right, next to the search bar area).
 2. You should see multiple frontier models available (for example: **GPT-5.2**, **GPT-5.2 Codex**, **Claude Sonnet 4.5**, **Claude Opus 4.5**, **Gemini**, etc.).
