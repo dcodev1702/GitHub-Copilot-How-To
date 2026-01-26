@@ -72,7 +72,7 @@ Notes:
 
 ## 2.5 Add MCP Servers to GitHub Copilot in VS Code
 
-MCP servers let Copilot Chat call trusted tools and retrieve grounded information (docs, browser automation, etc).
+MCP servers allows GitHub Copilot Chat call trusted tools and retrieve grounded information (docs, browser automation, etc).
 
 <img width="1377" height="1200" alt="image" src="https://github.com/user-attachments/assets/efe890e8-b2f0-45f8-9043-9d27c25f6ad8" />
 
