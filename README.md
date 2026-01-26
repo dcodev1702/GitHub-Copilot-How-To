@@ -189,6 +189,10 @@ Run **GitHub Copilot CLI**
 copilot
 ```
 
+```powershell
+copilot --banner
+```
+
 ### Sign in and select a model
 
 1. Open the Copilot CLI experience and sign in when prompted.
