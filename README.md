@@ -9,7 +9,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
 
-## 0. Set up NodeJS and a GitHub account
+## 0. Set up NodeJS and a GitHub account (if needed)
 
 1. Install NodeJS here: https://nodejs.org/en
    
