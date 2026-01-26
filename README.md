@@ -271,7 +271,7 @@ If you launched it via Aspire and the port is not 5000, copy the MCP URL from th
 ## 6. Join the Microsoft AI Community of Interest
 
 - https://aka.ms/garage/skillupai
-- Watch Scott Hanselman harness GitHub Copilot CLI w/ MCP and Copilot Skills
+- Watch Scott Hanselman harness the power of GitHub Copilot CLI w/ MCP and Copilot Skills & [Handy](https://handy.computer/)
 
 ---
 
