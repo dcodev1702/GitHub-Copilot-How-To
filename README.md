@@ -33,7 +33,7 @@ Helpful link:
 
 ## 1. Set up GitHub Copilot (Microsoft FTE flow)
 
-### Link your Microsoft corporate identity to your personal GitHub account
+### Link your Microsoft corporate identity with your personal GitHub account
 
 1. Link accounts here: https://repos.opensource.microsoft.com/link
 2. Follow this walkthrough (VS Code + Copilot setup):
