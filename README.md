@@ -189,6 +189,7 @@ Run **GitHub Copilot CLI**
 copilot
 ```
 
+Run **GitHub Copilot CLI w/ the fancy banner 😎**
 ```powershell
 copilot --banner
 ```
