@@ -157,7 +157,7 @@ The docs’ default local endpoint is typically `http://localhost:5000/mcp` (rep
 ## 3. Install PowerShell 7 (recommended)
 
 1. Install **PowerShell 7** from the Microsoft Store.
-2. Set it as the default profile:
+2. Set **PowerShell 7** as the default profile:
    - Open **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell 7** → **Save**
 
 <img width="1300" height="516" alt="image" src="https://github.com/user-attachments/assets/017bdc73-e022-42aa-8852-5399ef15ad78" />
