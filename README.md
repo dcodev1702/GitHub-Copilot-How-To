@@ -74,7 +74,7 @@ Notes:
 
 MCP servers let Copilot Chat call trusted tools and retrieve grounded information (docs, browser automation, etc).
 
-<img width="1151" height="1122" alt="image" src="https://github.com/user-attachments/assets/431a6c0e-a737-49a2-a09a-334e5c2e8c68" />
+<img width="1377" height="1200" alt="image" src="https://github.com/user-attachments/assets/efe890e8-b2f0-45f8-9043-9d27c25f6ad8" />
 
 
 ### File path
