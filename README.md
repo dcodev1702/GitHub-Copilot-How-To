@@ -279,6 +279,8 @@ If you launched it via Aspire and the port is not 5000, copy the MCP URL from th
 
 - Microsoft GitHub Copilot SDK
   - https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/
+- Microsoft PowerShell Azure Module (Az)
+  - https://learn.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-15.2.0
 - Microsoft Graph MCP Server overview:
   - https://learn.microsoft.com/en-us/graph/mcp-server/overview
 - Microsoft Sentinel (data lake) MCP overview:
