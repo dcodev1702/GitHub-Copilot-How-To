@@ -52,9 +52,7 @@ Notes:
 2. Install:
    
    ✅ **GitHub Copilot**
-
    ✅ **GitHub Copilot Chat**
-
    ✅ **GitHub Copilot for Azure**
 
 ### Sign in (VS Code Accounts)
