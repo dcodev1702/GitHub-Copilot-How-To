@@ -65,7 +65,10 @@ Notes:
 2. You should see multiple frontier models available (for example: **GPT-5.2**, **GPT-5.2 Codex**, **Claude Sonnet 4.5**, **Claude Opus 4.5**, **Gemini**, etc.).
 3. If you do — congratulations. You’re ready to use Copilot Chat with multiple model options.
 
-**🟢 YOU SHOULD SEE THIS 🟢**
+**🟢 GITHUB: YOU SHOULD SEE THIS 🟢**
+<img width="1053" height="800" alt="image" src="https://github.com/user-attachments/assets/37606a6a-64c7-4452-89ac-25a37be8fa23" />
+
+**🟢 VSCODE: YOU SHOULD SEE THIS 🟢**
 <img width="1150" height="1119" alt="image" src="https://github.com/user-attachments/assets/5499c6da-ab6e-46cf-b64b-565cf518dbd9" />
 
 ---
