@@ -127,34 +127,6 @@ Optional next steps (common troubleshooting):
 - If a server requires Node, install a recent Node.js LTS.
 - If a tool requires corporate access (tenant / permissions), it may not work outside your environment.
 
-### Add Aspire (SQL MCP Server) as an MCP server
-
-If you’re using **.NET Aspire** to run a local **SQL MCP Server** (powered by Data API builder), the MCP endpoint is an **HTTP URL that ends in `/mcp`**.
-Manual Instructions / Setup can be found [HERE](https://aspire.dev/dashboard/mcp-server/)
-
-Important notes:
-- If you’re running via Aspire, the **host port can be dynamic**. The easiest way to get the exact URL is:
-  1. Run `aspire run`
-  2. Open the Aspire dashboard
-  3. Find the `sql-mcp-server` resource
-  4. Click the **MCP** link and copy the full URL (it should end with `/mcp`)
-
-Official quickstarts:
-- .NET Aspire: https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-dotnet-aspire
-- VS Code (local): https://learn.microsoft.com/en-us/azure/data-api-builder/mcp/quickstart-visual-studio-code
-
-#### MCP config snippet (add to your existing `mcpServers`)
-
-The docs’ default local endpoint is typically `http://localhost:5000/mcp` (replace the port if Aspire shows a different one):
-
-```json
-"AspireSqlMcpServer": {
-  "type": "http",
-  "url": "http://localhost:5000/mcp",
-  "tools": ["*"]
-}
-```
-
 ---
 
 ## 3. Install PowerShell 7 (recommended)
@@ -250,20 +222,6 @@ Copy/paste this JSON into `mcp-config.json` (Context7 key omitted):
   }
 }
 ```
-
-### Optional: Add Aspire (SQL MCP Server) to Copilot CLI
-
-If you’re running the SQL MCP Server locally (whether via **Aspire** or `dab start`), you can add it to Copilot CLI by inserting this entry into the same `mcpServers` object:
-
-```json
-"AspireSqlMcpServer": {
-  "type": "http",
-  "url": "http://localhost:5000/mcp",
-  "tools": ["*"]
-}
-```
-
-If you launched it via Aspire and the port is not 5000, copy the MCP URL from the Aspire dashboard and update the `url` value (it must end with `/mcp`).
 
 ---
 
