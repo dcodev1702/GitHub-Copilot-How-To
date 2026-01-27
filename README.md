@@ -50,9 +50,9 @@ Notes:
 
 1. Open **VS Code** → **Extensions**.
 2. Install:
-   - **GitHub Copilot**
-   - **GitHub Copilot Chat**
-   - **GitHub Copilot for Azure**
+   ✅ **GitHub Copilot**
+   ✅ **GitHub Copilot Chat**
+   ✅ **GitHub Copilot for Azure**
 
 ### Sign in (VS Code Accounts)
 
