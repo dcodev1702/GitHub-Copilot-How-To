@@ -239,6 +239,8 @@ Copy/paste this JSON into `mcp-config.json` (Context7 key omitted):
 
 ## Additional resources
 
+- Tim Myers - GenAI Spec Driven Development (SDD) Demo's
+  - https://github.com/timothymeyers/sdd-demo-repo
 - Microsoft GitHub Copilot SDK
   - https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/
 - Microsoft PowerShell Azure Module (Az)
