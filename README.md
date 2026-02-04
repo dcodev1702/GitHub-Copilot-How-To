@@ -9,9 +9,10 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
 
-## 0. Set up NodeJS and a GitHub account (if needed)
+## 0. Set up Visual Studio Code (VSCode), NodeJS, and a GitHub account (if needed)
 
-1. Install NodeJS here: https://nodejs.org/en
+1. Install VSCode here: https://code.visualstudio.com/
+2. Install NodeJS here: https://nodejs.org/en
    
    🏁 Run the installer
 
@@ -173,6 +174,14 @@ copilot --banner
 ### Sign in and select a model
 
 1. Open the Copilot CLI experience and sign in when prompted.
+
+```text
+/login
+```
+
+<img width="1391" height="377" alt="image" src="https://github.com/user-attachments/assets/7aaeb7ba-2244-457e-b5c9-a1588e3d41a0" />
+
+
 2. Select your preferred model. Example (as used in many demos):
 
 ```text
@@ -238,7 +247,8 @@ Copy/paste this JSON into `mcp-config.json` (Context7 key omitted):
 ---
 
 ## Additional resources
-
+- Jesse Vincent - SUPERPOWERS (supported by Anthropic (Claude))
+  - https://github.com/obra/superpowers
 - Tim Myers - GenAI Spec Driven Development (SDD) Demo's
   - https://github.com/timothymeyers/sdd-demo-repo
 - Microsoft GitHub Copilot SDK
