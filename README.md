@@ -181,6 +181,7 @@ copilot --banner
 
 <img width="1391" height="377" alt="image" src="https://github.com/user-attachments/assets/7aaeb7ba-2244-457e-b5c9-a1588e3d41a0" />
 
+---
 
 2. Select your preferred model. Example (as used in many demos):
 
