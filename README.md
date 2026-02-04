@@ -191,6 +191,8 @@ copilot --banner
 
 > Tip: If you’re not sure which command starts the CLI on your machine, run `copilot --help` after installation and follow the sign-in prompts it provides.
 
+---
+
 ### Configure MCP for Copilot CLI
 
 Create or edit this file:
