@@ -250,7 +250,7 @@ Copy/paste this JSON into `mcp-config.json` (Context7 key omitted):
 ---
 
 ## Additional resources
-- Jesse Vincent - SUPERPOWERS (supported by Anthropic (Claude))
+- Jesse Vincent - **SUPERPOWERS** (supported by Anthropic (Claude))
   - https://github.com/obra/superpowers
 - Tim Myers - GenAI Spec Driven Development (SDD) Demo's
   - https://github.com/timothymeyers/sdd-demo-repo
