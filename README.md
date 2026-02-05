@@ -249,11 +249,17 @@ Copy/paste this JSON into `mcp-config.json` (Context7 key omitted):
 
 ---
 
-## Additional resources
+## Valuable Resources
 - Jesse Vincent - **SUPERPOWERS** (supported by Anthropic (Claude))
   - https://github.com/obra/superpowers
+- Making Windows Terminal Awesome w/ GitHub Copilot CLI
+  - https://developer.microsoft.com/blog/making-windows-terminal-awesome-with-github-copilot-cli
+- Awesome Agent Skills from leading Dev teams & Community
+  - https://github.com/VoltAgent/awesome-agent-skills
 - Tim Myers - GenAI Spec Driven Development (SDD) Demo's
   - https://github.com/timothymeyers/sdd-demo-repo
+- Microsoft Teams MCP Reference
+  - https://learn.microsoft.com/en-us/microsoft-agent-365/mcp-server-reference/teams
 - Microsoft GitHub Copilot SDK
   - https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/
 - Microsoft PowerShell Azure Module (Az)
