@@ -137,6 +137,8 @@ Optional next steps (common troubleshooting):
 2. Set **PowerShell 7** as the default profile:
    - Open **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell 7** → **Save**
 
+<img width="1395" height="973" alt="image" src="https://github.com/user-attachments/assets/4373aee1-5007-43ff-ae3b-3dcd068ade77" />
+
 <img width="1300" height="516" alt="image" src="https://github.com/user-attachments/assets/017bdc73-e022-42aa-8852-5399ef15ad78" />
 
 
