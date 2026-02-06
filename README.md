@@ -10,9 +10,9 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
 
 ## 0. Set up Visual Studio Code (VSCode), NodeJS, and a GitHub account (if needed)
-
-1. Install VSCode here: https://code.visualstudio.com/
-2. Install NodeJS here: https://nodejs.org/en
+1. JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva) 🔥🔥🔥🔥
+2. Install VSCode here: https://code.visualstudio.com/
+3. Install NodeJS here: https://nodejs.org/en
    
    🏁 Run the installer
 
@@ -22,9 +22,9 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 		✅ Accept defaults (don’t overthink it)
 		
 		Finish the install.
-3. Create a GitHub account: https://github.com/
-4. Install the GitHub Mobile app on your mobile device.
-5. Enable 2FA (two-factor authentication) on your GitHub account.
+4. Create a GitHub account: https://github.com/
+5. Install the GitHub Mobile app on your mobile device.
+6. Enable 2FA (two-factor authentication) on your GitHub account.
    - Recommended: configure 2FA so you can approve sign-ins from the mobile app.
    - GitHub 2FA docs: https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa
 
