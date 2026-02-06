@@ -118,8 +118,9 @@ Create or edit this file:
 }
 ```
 
-Obtain context7 API KEY
+Create & Obtain Context7 API KEY
 - Go to context7 and create an account to obtain an API KEY and insert that key into your mcp.json and mcp-config.json files
+- Sign-Up/Sign-In to Context7 using your GitHub account
 - Context7: https://context7.com/
 
 Optional next steps (common troubleshooting):
