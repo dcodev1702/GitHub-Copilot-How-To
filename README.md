@@ -64,7 +64,7 @@ Notes:
 ### Verify Copilot Chat + model selector
 
 1. Open the **GitHub Copilot Chat** panel (chat icon near the top right, next to the search bar area).
-2. You should see multiple frontier models available (for example: **GPT-5.2**, **GPT-5.2 Codex**, **Claude Sonnet 4.5**, **Claude Opus 4.5**, **Gemini**, etc.).
+2. You should see multiple frontier models available (for example: **GPT-5.2**, **GPT-5.2 Codex**, **Claude Sonnet 4.5**, **Claude Opus 4.6**, **Gemini 3 Pro**, etc.).
 3. If you do — congratulations. You’re ready to use Copilot Chat with multiple model options.
 
 **🟢 GITHUB → SETTINGS → BILLING/LICENSING → LICENSING: YOU SHOULD SEE THIS 🟢**
@@ -188,7 +188,7 @@ copilot --banner
 2. Select your preferred model. Example (as used in many demos):
 
 ```text
-/model claude-opus-4.5
+/model claude-opus-4.6
 ```
 
 > Tip: If you’re not sure which command starts the CLI on your machine, run `copilot --help` after installation and follow the sign-in prompts it provides.
