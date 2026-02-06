@@ -15,8 +15,8 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 2. Install VSCode: https://code.visualstudio.com/
 3. Install NodeJS: https://nodejs.org/en
    
-   > [!IMPORTANT]
-   > Run the installer
+> [!IMPORTANT]
+> Run the installer
 
 		During setup:
 		✅ Leave npm package manager checked
