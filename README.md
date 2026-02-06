@@ -38,8 +38,7 @@ Helpful link:
 
 1. Link accounts here: https://repos.opensource.microsoft.com/link
    
-	> **If additional assistance is required**, follow this walkthrough (VS Code + Copilot setup):
- 
+	> **If additional assistance is required**, follow this walkthrough (VS Code + Copilot setup): <br/>
    	   - https://github.com/mcaps-microsoft/Getting-Started-with-GitHub-Copilot-and-VSCode/blob/main/Getting_Started_with_GitHub_Copilot_and_VSCode.md
 
 Notes:
