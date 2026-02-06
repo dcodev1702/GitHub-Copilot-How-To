@@ -26,9 +26,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 4. Install the GitHub Mobile app on your mobile device.
 5. Enable 2FA (two-factor authentication) on your GitHub account.
    - Recommended: configure 2FA so you can approve sign-ins from the mobile app.
-
-Helpful link:
-- GitHub 2FA docs: https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa
+   - GitHub 2FA docs: https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa
 
 ---
 
