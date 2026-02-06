@@ -54,7 +54,6 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 2. Install:
    
    ✅ **GitHub Copilot** <br/>
-   ✅ **GitHub Copilot Chat** <br/>
    ✅ **GitHub Copilot for Azure** <br/>
 
 ### Sign in (VS Code Accounts)
@@ -91,8 +90,8 @@ Create or edit this file:
 
 ### Copy/paste this JSON into `mcp.json`
 
-> Security note: If you use Context7, do **not** paste your real key into shared docs. Keep it local.
-> Configuration note: The format / structure for mcp.json is **different** than mcp-config.json (GitHub Copilot CLI)
+> [!NOTE]
+> The format / structure for mcp.json is **different** than mcp-config.json (GitHub Copilot CLI)
 ```json
 {
 	"servers": {
