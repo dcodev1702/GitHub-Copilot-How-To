@@ -3,7 +3,7 @@
 This beginner-friendly guide walks you through setting up GitHub Copilot in **VS Code** and installing **GitHub Copilot CLI**, to include, how to configure **MCP servers** (Model Context Protocol) for richer, tool-backed prompts.
 
 > [!TIP]
-> Keep your personal GitHub account secure (strong password + 2FA) since it becomes your primary identity for Copilot access.
+> Keep your personal GitHub account secure (strong password + 2FA or Passkey) since it becomes your primary identity for Copilot access.
 
 ---
 ## What can GitHub Copilot CLI do??
@@ -15,7 +15,8 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 2. Install VSCode: https://code.visualstudio.com/
 3. Install NodeJS: https://nodejs.org/en
    
-   🏁 Run the installer
+   > [!IMPORTANT]
+   > Run the installer
 
 		During setup:
 		✅ Leave npm package manager checked
