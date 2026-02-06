@@ -37,8 +37,8 @@ Helpful link:
 ### Link your Microsoft corporate identity with your personal GitHub account
 
 1. Link accounts here: https://repos.opensource.microsoft.com/link
-2. Follow this walkthrough (VS Code + Copilot setup):
-   - https://github.com/mcaps-microsoft/Getting-Started-with-GitHub-Copilot-and-VSCode/blob/main/Getting_Started_with_GitHub_Copilot_and_VSCode.md
+	> **If additional assistance is required**, follow this walkthrough (VS Code + Copilot setup):
+   	   - https://github.com/mcaps-microsoft/Getting-Started-with-GitHub-Copilot-and-VSCode/blob/main/Getting_Started_with_GitHub_Copilot_and_VSCode.md
 
 Notes:
 - If access doesn’t appear immediately, wait a bit and try signing out/in again.
