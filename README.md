@@ -41,7 +41,6 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 > [!NOTE]
 > **If additional assistance is required**, follow this walkthrough (VS Code + Copilot setup): <br/>
 > https://github.com/mcaps-microsoft/Getting-Started-with-GitHub-Copilot-and-VSCode/blob/main/Getting_Started_with_GitHub_Copilot_and_VSCode.md <br/>
-> If access doesn’t appear immediately, wait a bit and try signing out/in again.
 
 ---
 
