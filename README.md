@@ -63,12 +63,12 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 1. Open the **GitHub Copilot Chat** panel (chat icon near the top right, next to the search bar area).
 2. You should see multiple frontier models available (for example: **GPT-5.2**, **GPT-5.2 Codex**, **Claude Sonnet 4.5**, **Claude Opus 4.6**, **Gemini 3 Pro**, etc.).
-3. If you do — congratulations. You’re ready to use Copilot Chat with multiple model options.
+3. If you do — CONGRATULATIONS!! You’re ready to use GitHub Copilot Chat with multiple foundation model options.
 
 **🟢 GITHUB → SETTINGS → BILLING/LICENSING → LICENSING: YOU SHOULD SEE THIS 🟢**
 <img width="1053" height="800" alt="image" src="https://github.com/user-attachments/assets/37606a6a-64c7-4452-89ac-25a37be8fa23" />
 
-**🟢 VSCODE: YOU SHOULD SEE THIS 🟢**
+**🟢 VS CODE: YOU SHOULD SEE THIS 🟢**
 <img width="1150" height="1119" alt="image" src="https://github.com/user-attachments/assets/5499c6da-ab6e-46cf-b64b-565cf518dbd9" />
 
 ---
@@ -80,7 +80,7 @@ MCP servers allows GitHub Copilot Chat call trusted tools and retrieve grounded 
 <img width="1377" height="1200" alt="image" src="https://github.com/user-attachments/assets/efe890e8-b2f0-45f8-9043-9d27c25f6ad8" />
 
 
-### File path
+### Model Context Protocol (MCP) File path for VS Code
 
 Create or edit this file:
 
