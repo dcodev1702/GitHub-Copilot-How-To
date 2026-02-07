@@ -59,8 +59,9 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 1. In VS Code, open **Accounts** (person icon) → sign in.
 2. Sign in using the **personal GitHub account** that you linked to your Microsoft corporate account.
 
-<img width="1324" height="1302" alt="image" src="https://github.com/user-attachments/assets/bb5a41c7-6aec-4ad5-9398-967cde3c877e" />
+<img width="1301" height="1021" alt="image" src="https://github.com/user-attachments/assets/5b7554c5-b423-498f-a779-0856933fd349" />
 
+---
 
 ### Verify Copilot Chat + model selector
 
