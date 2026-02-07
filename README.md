@@ -34,7 +34,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 ## 1. Set up GitHub Copilot (Microsoft FTE flow)
 
-### Link your Microsoft corporate identity with your personal GitHub account
+### 🔗 Link your Microsoft corporate identity with your personal GitHub account
 
 1. Link accounts here: https://repos.opensource.microsoft.com/link
 
