@@ -72,7 +72,8 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 <img width="1053" height="800" alt="image" src="https://github.com/user-attachments/assets/37606a6a-64c7-4452-89ac-25a37be8fa23" />
 
 **🟢 VS CODE: YOU SHOULD SEE THIS 🟢**
-<img width="1150" height="1119" alt="image" src="https://github.com/user-attachments/assets/5499c6da-ab6e-46cf-b64b-565cf518dbd9" />
+<img width="1297" height="972" alt="image" src="https://github.com/user-attachments/assets/9f8e5d1f-4383-4507-a7b9-53407c88609b" />
+
 
 ---
 
