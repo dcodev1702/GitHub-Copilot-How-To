@@ -6,11 +6,13 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 > Keep your personal GitHub account secure (strong password + 2FA or Passkey) since it becomes your primary identity for Copilot access.
 
 ---
+
 ## What can GitHub Copilot CLI do??
 
 [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli)
 
 ## 0. Set up Visual Studio Code (VSCode), NodeJS, and a GitHub account (if needed)
+
 1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
 2. Install VSCode: https://code.visualstudio.com/
 3. Install NodeJS: https://nodejs.org/en
@@ -27,8 +29,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 4. Create a GitHub account: https://github.com/
 5. Install the GitHub Mobile app on your mobile device.
 6. Enable 2FA (two-factor authentication) on your GitHub account.
-   - Recommended: configure 2FA so you can approve sign-ins from the mobile app.
-   - GitHub 2FA docs: https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa
+   * Recommended: configure 2FA so you can approve sign-ins from the mobile app. See the [GitHub 2FA docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
 
 ---
 
@@ -70,7 +71,8 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 3. If you do — CONGRATULATIONS!! You’re ready to use GitHub Copilot Chat with multiple foundation model options.
 
 **🟢 GITHUB → SETTINGS → BILLING/LICENSING → LICENSING: YOU SHOULD SEE THIS 🟢**
-<img width="1053" height="800" alt="image" src="https://github.com/user-attachments/assets/37606a6a-64c7-4452-89ac-25a37be8fa23" />
+
+![image](https://github.com/user-attachments/assets/37606a6a-64c7-4452-89ac-25a37be8fa23)
 
 **🟢 VS CODE: YOU SHOULD SEE THIS 🟢**
 <img width="1297" height="972" alt="image" src="https://github.com/user-attachments/assets/9f8e5d1f-4383-4507-a7b9-53407c88609b" />
@@ -82,14 +84,13 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 MCP servers allows GitHub Copilot Chat call trusted tools and retrieve grounded information (docs, browser automation, etc).
 
-<img width="1377" height="1200" alt="image" src="https://github.com/user-attachments/assets/efe890e8-b2f0-45f8-9043-9d27c25f6ad8" />
-
+![image](https://github.com/user-attachments/assets/efe890e8-b2f0-45f8-9043-9d27c25f6ad8)
 
 ### Model Context Protocol (MCP) File path for VS Code
 
 Create or edit this file:
 
-- `C:\Users\%USERNAME%\AppData\Roaming\Code\User\mcp.json`
+* `C:\Users\%USERNAME%\AppData\Roaming\Code\User\mcp.json`
 
 ### Copy/paste this JSON into `mcp.json`
 
@@ -97,29 +98,29 @@ Create or edit this file:
 > The format / structure for mcp.json is **different** than mcp-config.json (GitHub Copilot CLI)
 ```json
 {
-	"servers": {
-		"playwright": {
-			"command": "npx",
-			"args": [
-				"@playwright/mcp@latest"
-			],
-			"type": "stdio"
-		},
-		"context7": {
-			"type": "http",
-			"url": "https://mcp.context7.com/mcp",
-			"headers": {
-				"CONTEXT7_API_KEY": "ADD_YOUR_API_KEY_HERE"
-			}
-		},
-		"Microsoft Learn - MCP": {
-			"type": "http",
-			"url": "https://learn.microsoft.com/api/mcp",
-			"gallery": "https://api.mcp.github.com",
-			"version": "1.0.0"
-		}
-	},
-	"inputs": []
+    "servers": {
+        "playwright": {
+            "command": "npx",
+            "args": [
+                "@playwright/mcp@latest"
+            ],
+   "type": "stdio"
+  },
+  "context7": {
+   "type": "http",
+   "url": "https://mcp.context7.com/mcp",
+   "headers": {
+    "CONTEXT7_API_KEY": "ADD_YOUR_API_KEY_HERE"
+   }
+  },
+  "Microsoft Learn - MCP": {
+   "type": "http",
+   "url": "https://learn.microsoft.com/api/mcp",
+   "gallery": "https://api.mcp.github.com",
+   "version": "1.0.0"
+  }
+ },
+ "inputs": []
 }
 ```
 
@@ -129,9 +130,10 @@ Create & Obtain Context7 API KEY
 - Context7: https://context7.com/
 
 Optional next steps (common troubleshooting):
-- Restart VS Code after editing `mcp.json`.
-- If a server requires Node, install a recent Node.js LTS.
-- If a tool requires corporate access (tenant / permissions), it may not work outside your environment.
+
+* Restart VS Code after editing `mcp.json`.
+* If a server requires Node, install a recent Node.js LTS.
+* If a tool requires corporate access (tenant / permissions), it may not work outside your environment.
 
 ---
 
@@ -139,23 +141,21 @@ Optional next steps (common troubleshooting):
 
 1. Install **PowerShell 7** from the Microsoft Store.
 2. Set **PowerShell 7** as the default profile:
-   - Open **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell 7** → **Save**
+   * Open **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell 7** → **Save**
 
-<img width="1395" height="973" alt="image" src="https://github.com/user-attachments/assets/4373aee1-5007-43ff-ae3b-3dcd068ade77" />
+![image](https://github.com/user-attachments/assets/4373aee1-5007-43ff-ae3b-3dcd068ade77)
 
-<img width="1300" height="516" alt="image" src="https://github.com/user-attachments/assets/017bdc73-e022-42aa-8852-5399ef15ad78" />
-
+![image](https://github.com/user-attachments/assets/017bdc73-e022-42aa-8852-5399ef15ad78)
 
 ---
 
 ## 4. Install GitHub Copilot CLI
 
-<img width="1602" height="753" alt="image" src="https://github.com/user-attachments/assets/b546b6bd-1e9c-4717-9ee6-86807145abcf" />
-
+![image](https://github.com/user-attachments/assets/b546b6bd-1e9c-4717-9ee6-86807145abcf)
 
 ### Confirm Copilot access
 
-1. Go to: https://copilot.github.microsoft.com/
+1. Go to [Github Copilot](https://copilot.github.microsoft.com/)
 2. Confirm it recognizes you as connected/eligible for GitHub Copilot.
 
 ### Install GitHub Copilot CLI via winget
@@ -166,13 +166,14 @@ Open **PowerShell 7** and run:
 winget install github.copilot
 ```
 
-Run **GitHub Copilot CLI** 
+Run **GitHub Copilot CLI**
 
 ```powershell
 copilot
 ```
 
 Run **GitHub Copilot CLI w/ the fancy banner 😎**
+
 ```powershell
 copilot --banner
 ```
@@ -185,7 +186,7 @@ copilot --banner
 /login
 ```
 
-<img width="1391" height="377" alt="image" src="https://github.com/user-attachments/assets/7aaeb7ba-2244-457e-b5c9-a1588e3d41a0" />
+![image](https://github.com/user-attachments/assets/7aaeb7ba-2244-457e-b5c9-a1588e3d41a0)
 
 ---
 
@@ -204,7 +205,7 @@ copilot --banner
 
 Create or edit this file:
 
-- `C:\Users\%USERNAME%\.copilot\mcp-config.json`
+* `C:\Users\%USERNAME%\.copilot\mcp-config.json`
 
 Copy/paste this JSON into `mcp-config.json` (Context7 key omitted):
 
@@ -247,37 +248,26 @@ Copy/paste this JSON into `mcp-config.json` (Context7 key omitted):
 
 ## 5. GitHub Copilot CLI How-To's
 
-- https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli
+* https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli
 
 ## 6. Join the Microsoft AI Community of Interest
 
-- https://aka.ms/garage/skillupai
-- Watch Scott Hanselman harness the power of GitHub Copilot CLI w/ MCP and Copilot Skills & [Handy](https://handy.computer/)
+* https://aka.ms/garage/skillupai
+* Watch Scott Hanselman harness the power of GitHub Copilot CLI w/ MCP and Copilot Skills & [Handy](https://handy.computer/)
 
 ---
 
 ## Valuable Resources
-- Jesse Vincent - **SUPERPOWERS** (supported by Anthropic (Claude))
-  - https://github.com/obra/superpowers
-- Making Windows Terminal Awesome w/ GitHub Copilot CLI
-  - https://developer.microsoft.com/blog/making-windows-terminal-awesome-with-github-copilot-cli
-- Awesome Agent Skills from leading Dev teams & Community
-  - https://github.com/VoltAgent/awesome-agent-skills
-- Tim Myers - GenAI Spec Driven Development (SDD) Demo's
-  - https://github.com/timothymeyers/sdd-demo-repo
-- Microsoft Teams MCP Reference
-  - https://learn.microsoft.com/en-us/microsoft-agent-365/mcp-server-reference/teams
-- Microsoft GitHub Copilot SDK
-  - https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/
-- Microsoft PowerShell Azure Module (Az)
-  - https://learn.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-15.2.0
-- Microsoft Graph MCP Server overview:
-  - https://learn.microsoft.com/en-us/graph/mcp-server/overview
-- Microsoft Sentinel (data lake) MCP overview:
-  - https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-overview
-- GitHub Copilot documentation:
-  - https://docs.github.com/en/copilot
-- John Saville YouTube Channel
-  - https://www.youtube.com/@NTFAQGuy
-- Azure Friday's
-  - https://azurefriday.com/
+
+* [Jesse Vincent - **SUPERPOWERS** (supported by Anthropic (Claude))](https://github.com/obra/superpowers)
+* [Making Windows Terminal Awesome w/ GitHub Copilot CLI](https://developer.microsoft.com/blog/making-windows-terminal-awesome-with-github-copilot-cli)
+* [Awesome Agent Skills from leading Dev teams & Community](https://github.com/VoltAgent/awesome-agent-skills)
+* [Tim Myers - GenAI Spec Driven Development (SDD) Demo's](https://github.com/timothymeyers/sdd-demo-repo)
+* [Microsoft Teams MCP Reference](https://learn.microsoft.com/en-us/microsoft-agent-365/mcp-server-reference/teams)
+* [Microsoft GitHub Copilot SDK](https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/)
+* [Microsoft PowerShell Azure Module (Az)](https://learn.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-15.2.0)
+* [Microsoft Graph MCP Server overview](https://learn.microsoft.com/en-us/graph/mcp-server/overview)
+* [Microsoft Sentinel (data lake) MCP overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-overview)
+* [GitHub Copilot documentation](https://docs.github.com/en/copilot)
+* [John Saville YouTube Channel](https://www.youtube.com/@NTFAQGuy)
+* [Azure Friday's](https://azurefriday.com/)
