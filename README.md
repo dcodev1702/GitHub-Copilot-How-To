@@ -2,7 +2,8 @@
 
 This beginner-friendly guide walks you through setting up GitHub Copilot in **VS Code** and installing **GitHub Copilot CLI**, to include, how to configure **MCP servers** (Model Context Protocol) for richer, tool-backed prompts.
 
-> Tip: Keep your personal GitHub account secure (strong password + 2FA) since it becomes your primary identity for Copilot access.
+> [!IMPORTANT]
+> Keep your personal GitHub account secure (strong password + 2FA or Passkey) since it becomes your primary identity for Copilot access.
 
 ---
 
@@ -13,19 +14,19 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 ## 0. Set up Visual Studio Code (VSCode), NodeJS, and a GitHub account (if needed)
 
 1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
-2. Install [VSCode](https://code.visualstudio.com/)
-3. Install [NodeJS](https://nodejs.org/en)
+2. Install VSCode: https://code.visualstudio.com/
+3. Install NodeJS: https://nodejs.org/en
+   
+> [!TIP]
+> Run the installer
 
-    🏁 Run the installer
-
-      During setup:
-    * ✅ Leave npm package manager checked
-    * ✅ Leave Add to PATH checked
-    * ✅ Accept defaults (don’t overthink it)
-
-    Finish the install.
-
-4. Create a [GitHub account](https://github.com/).
+		During setup:
+		✅ Leave npm package manager checked
+		✅ Leave Add to PATH checked
+		✅ Accept defaults (don’t overthink it)
+		
+		Finish the install.
+4. Create a GitHub account: https://github.com/
 5. Install the GitHub Mobile app on your mobile device.
 6. Enable 2FA (two-factor authentication) on your GitHub account.
    * Recommended: configure 2FA so you can approve sign-ins from the mobile app. See the [GitHub 2FA docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
@@ -34,15 +35,13 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 ## 1. Set up GitHub Copilot (Microsoft FTE flow)
 
-### Link your Microsoft corporate identity with your personal GitHub account
+### 🔗 Link your Microsoft corporate identity with your personal GitHub account
 
-1. Link accounts [here](https://repos.opensource.microsoft.com/link)
+1. Link accounts: https://repos.opensource.microsoft.com/link
 
-    > **If additional assistance is required**, follow this walkthrough [VS Code + Copilot setup](https://github.com/mcaps-microsoft/Getting-Started-with-GitHub-Copilot-and-VSCode/blob/main/Getting_Started_with_GitHub_Copilot_and_VSCode.md)
-
-Notes:
-
-* If access doesn’t appear immediately, wait a bit and try signing out/in again.
+> [!NOTE]
+> **If additional assistance is required**, follow this walkthrough (VS Code + Copilot setup): <br/>
+> https://github.com/mcaps-microsoft/Getting-Started-with-GitHub-Copilot-and-VSCode/blob/main/Getting_Started_with_GitHub_Copilot_and_VSCode.md <br/>
 
 ---
 
@@ -52,29 +51,32 @@ Notes:
 
 1. Open **VS Code** → **Extensions**.
 2. Install:
+   
+   ✅ **GitHub Copilot** <br/>
+   ✅ **GitHub Copilot for Azure** <br/>
 
-* ✅ **GitHub Copilot**
-* ✅ **[GitHub Copilot Chat](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot-chat)**
-* ✅ **[GitHub Copilot for Azure](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot)**
-
-### Sign in (VS Code Accounts)
+### 💻 Sign in (VS Code Accounts)
 
 1. In VS Code, open **Accounts** (person icon) → sign in.
 2. Sign in using the **personal GitHub account** that you linked to your Microsoft corporate account.
+
+<img width="1301" height="1021" alt="image" src="https://github.com/user-attachments/assets/5b7554c5-b423-498f-a779-0856933fd349" />
+
+---
 
 ### Verify Copilot Chat + model selector
 
 1. Open the **GitHub Copilot Chat** panel (chat icon near the top right, next to the search bar area).
 2. You should see multiple frontier models available (for example: **GPT-5.2**, **GPT-5.2 Codex**, **Claude Sonnet 4.5**, **Claude Opus 4.6**, **Gemini 3 Pro**, etc.).
-3. If you do — congratulations. You’re ready to use Copilot Chat with multiple model options.
+3. If you do — CONGRATULATIONS!! You’re ready to use GitHub Copilot Chat with multiple foundation model options.
 
 **🟢 GITHUB → SETTINGS → BILLING/LICENSING → LICENSING: YOU SHOULD SEE THIS 🟢**
 
 ![image](https://github.com/user-attachments/assets/37606a6a-64c7-4452-89ac-25a37be8fa23)
 
-**🟢 VSCODE: YOU SHOULD SEE THIS 🟢**
+**🟢 VS CODE: YOU SHOULD SEE THIS 🟢**
+<img width="1297" height="972" alt="image" src="https://github.com/user-attachments/assets/9f8e5d1f-4383-4507-a7b9-53407c88609b" />
 
-![image](https://github.com/user-attachments/assets/5499c6da-ab6e-46cf-b64b-565cf518dbd9)
 
 ---
 
@@ -84,7 +86,7 @@ MCP servers allows GitHub Copilot Chat call trusted tools and retrieve grounded 
 
 ![image](https://github.com/user-attachments/assets/efe890e8-b2f0-45f8-9043-9d27c25f6ad8)
 
-### File path
+### Model Context Protocol (MCP) File path for VS Code
 
 Create or edit this file:
 
@@ -92,9 +94,8 @@ Create or edit this file:
 
 ### Copy/paste this JSON into `mcp.json`
 
-> Security note: If you use Context7, do **not** paste your real key into shared docs. Keep it local.
-> Configuration note: The format / structure for mcp.json is **different** than mcp-config.json (GitHub Copilot CLI)
-
+> [!NOTE]
+> The format / structure for mcp.json is **different** than mcp-config.json (GitHub Copilot CLI)
 ```json
 {
     "servers": {
@@ -123,9 +124,10 @@ Create or edit this file:
 }
 ```
 
-### Obtain context7 API KEY
-
-* Go to [Context7](https://context7.com/) and create an account to obtain an API KEY and insert that key into your mcp.json and mcp-config.json files
+Create & Obtain Context7 API KEY
+- Go to context7 and create an account to obtain an API KEY and insert that key into your mcp.json and mcp-config.json files
+- Sign-Up/Sign-In to Context7 using your GitHub account
+- Context7: https://context7.com/
 
 Optional next steps (common troubleshooting):
 
@@ -194,7 +196,8 @@ copilot --banner
 /model claude-opus-4.6
 ```
 
-> Tip: If you’re not sure which command starts the CLI on your machine, run `copilot --help` after installation and follow the sign-in prompts it provides.
+> [!TIP]
+> If you’re not sure which command starts the CLI on your machine, run `copilot --help` after installation and follow the sign-in prompts it provides.
 
 ---
 
