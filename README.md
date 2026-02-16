@@ -186,8 +186,6 @@ copilot --banner
 /login
 ```
 
-![image](https://github.com/user-attachments/assets/7aaeb7ba-2244-457e-b5c9-a1588e3d41a0)
-
 ![image](https://github.com/user-attachments/assets/4e4bf471-b315-4fd5-a3de-6d3cf13f81da)
 
 ---
