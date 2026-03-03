@@ -151,7 +151,7 @@ Optional next steps (common troubleshooting):
 
 ## 4. Install GitHub Copilot CLI
 
-![image](https://github.com/user-attachments/assets/b546b6bd-1e9c-4717-9ee6-86807145abcf)
+![image](https://github.com/user-attachments/assets/f3b90d7f-5ea8-46ee-bb6c-f45b1b97bdc6)
 
 ### Confirm Copilot access
 
