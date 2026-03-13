@@ -14,8 +14,13 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 ## 0. Set up Visual Studio Code (VSCode), NodeJS, and a GitHub account (if needed)
 
 1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
-2. Install VSCode: https://code.visualstudio.com/
-3. Install NodeJS: https://nodejs.org/en
+2. Install **PowerShell 7** from the Microsoft Store
+   ```powershell
+   # From the terminal: Install PowerShell 7
+   winget install --id Microsoft.PowerShell --source winget
+   ```
+4. Install VSCode: https://code.visualstudio.com/
+5. Install NodeJS: https://nodejs.org/en
    ```powershell
    # Latest LTS (recommended)
    winget install OpenJS.NodeJS.LTS
@@ -146,8 +151,7 @@ Optional next steps (common troubleshooting):
 
 ## 3. Install PowerShell 7 (recommended)
 
-1. Install **PowerShell 7** from the Microsoft Store.
-2. Set **PowerShell 7** as the default profile:
+1. Set **PowerShell 7** as the default profile:
    * Open **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell 7** → **Save**
 
 ![image](https://github.com/user-attachments/assets/4373aee1-5007-43ff-ae3b-3dcd068ade77)
