@@ -24,7 +24,8 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
    ```powershell
    # Latest LTS (recommended)
    winget install OpenJS.NodeJS.LTS
-
+   ```
+   ```powershell
    # Or latest Current (25.x)
    winget install OpenJS.NodeJS
    ```
