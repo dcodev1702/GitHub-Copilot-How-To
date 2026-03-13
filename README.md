@@ -9,7 +9,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 ## What can [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) do for you!?
 
-## 0. Set up Visual Studio Code (VSCode), NodeJS, and a GitHub account (if needed)
+## Set up Visual Studio Code (VSCode), NodeJS, and a GitHub account (if needed)
 
 1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
    
