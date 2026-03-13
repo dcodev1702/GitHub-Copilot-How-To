@@ -13,17 +13,17 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
    
-3. Install **PowerShell 7** from 🖥️ 'Terminal' (CLI)
+2. Install **PowerShell 7** from 🖥️ 'Terminal' (CLI)
    ```powershell
    # Install PowerShell 7
    winget install --id Microsoft.PowerShell --source winget
    ```
-4. Install VSCode: https://code.visualstudio.com/
+3. Install VSCode: https://code.visualstudio.com/
    ```powershell
    # Install VS Code 
    winget install Microsoft.VisualStudioCode
    ```
-6. Install NodeJS: https://nodejs.org/en
+4. Install NodeJS: https://nodejs.org/en
    ```powershell
    # Latest LTS (recommended)
    winget install OpenJS.NodeJS.LTS
@@ -42,9 +42,9 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 		✅ Accept defaults (don’t overthink it)
 		
 		Finish the install.
-4. Create a GitHub account: https://github.com/
-5. Install the GitHub Mobile app on your mobile device.
-6. Enable 2FA (two-factor authentication) on your GitHub account.
+5. Create a GitHub account: https://github.com/
+6. Install the GitHub Mobile app on your mobile device.
+7. Enable 2FA (two-factor authentication) on your GitHub account.
    * Recommended: configure 2FA so you can approve sign-ins from the mobile app. See the [GitHub 2FA docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
 
 ---
