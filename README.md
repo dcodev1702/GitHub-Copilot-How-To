@@ -102,7 +102,7 @@ Start from section 2.5 of the README.md and configure MCP servers for GitHub Cop
 ```
 
 
-
+![Prompt-To-MCP](images/MCP_Config_via_Prompt.jpg)
 
 
 MCP servers allows GitHub Copilot Chat call trusted tools and retrieve grounded information (docs, browser automation, etc).
