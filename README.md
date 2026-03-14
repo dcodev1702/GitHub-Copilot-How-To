@@ -21,7 +21,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 	![image](https://github.com/user-attachments/assets/4373aee1-5007-43ff-ae3b-3dcd068ade77)
 
-	![image](https://github.com/user-attachments/assets/017bdc73-e022-42aa-8852-5399ef15ad78)
+	![image](images/pwsh_7_terminal.jpg)
 
 3. Install VSCode: https://code.visualstudio.com/
    ```powershell
