@@ -10,7 +10,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
 		
-2. Install **PowerShell 7** from 🖥️ 'Terminal' (CLI)
+2. Install **PowerShell 7, et al** from the 🖥️ 'Terminal' (CLI)
    ```powershell
    # Install PowerShell 7 (silently / non-interactive)
    winget install --id Microsoft.PowerShell --source winget --silent --accept-package-agreements --accept-source-agreements
