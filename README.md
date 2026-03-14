@@ -15,6 +15,14 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
    # Install PowerShell 7 (silently / non-interactive)
    winget install --id Microsoft.PowerShell --source winget --silent --accept-package-agreements --accept-source-agreements
    ```
+
+   * Set **PowerShell 7** as the default profile:
+   * Open **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell 7** → **Save**
+
+	![image](https://github.com/user-attachments/assets/4373aee1-5007-43ff-ae3b-3dcd068ade77)
+
+	![image](https://github.com/user-attachments/assets/017bdc73-e022-42aa-8852-5399ef15ad78)
+
 3. Install VSCode: https://code.visualstudio.com/
    ```powershell
    # Install VS Code (silently / non-interactively)
@@ -164,17 +172,7 @@ Optional next steps (common troubleshooting):
 * Restart VS Code after editing `mcp.json`.
 * If a server requires Node, install a recent Node.js LTS.
 * If a tool requires corporate access (tenant / permissions), it may not work outside your environment.
-
----
-
-## 3. Termina & PowerShell 7 (recommended)
-
-1. Set **PowerShell 7** as the default profile:
-   * Open **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell 7** → **Save**
-
-![image](https://github.com/user-attachments/assets/4373aee1-5007-43ff-ae3b-3dcd068ade77)
-
-![image](https://github.com/user-attachments/assets/017bdc73-e022-42aa-8852-5399ef15ad78)
+* 
 
 ---
 
