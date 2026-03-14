@@ -73,7 +73,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 1. In VS Code, open **Accounts** (person icon) → sign in.
 2. Sign in using the **personal GitHub account** that you linked to your Microsoft corporate account.
 
-<img width="1301" height="1021" alt="image" src="https://github.com/user-attachments/assets/5b7554c5-b423-498f-a779-0856933fd349" />
+![image](https://github.com/user-attachments/assets/5b7554c5-b423-498f-a779-0856933fd349)
 
 ---
 
@@ -89,7 +89,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 ![image](https://github.com/user-attachments/assets/37606a6a-64c7-4452-89ac-25a37be8fa23)
 
 **🟢 VS CODE: YOU SHOULD SEE THIS 🟢**
-<img width="1297" height="972" alt="image" src="https://github.com/user-attachments/assets/9f8e5d1f-4383-4507-a7b9-53407c88609b" />
+![image](https://github.com/user-attachments/assets/9f8e5d1f-4383-4507-a7b9-53407c88609b)
 
 
 ---
@@ -179,6 +179,8 @@ Optional next steps (common troubleshooting):
 ---
 
 ## 4. Install GitHub Copilot CLI
+
+![GH CLI Terminal](images/gh_cli_terminal.png)
 
 ![image](https://github.com/user-attachments/assets/f3b90d7f-5ea8-46ee-bb6c-f45b1b97bdc6)
 
