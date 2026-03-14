@@ -167,7 +167,7 @@ Optional next steps (common troubleshooting):
 
 ---
 
-## 3. Install PowerShell 7 (recommended)
+## 3. Termina & PowerShell 7 (recommended)
 
 1. Set **PowerShell 7** as the default profile:
    * Open **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell 7** → **Save**
