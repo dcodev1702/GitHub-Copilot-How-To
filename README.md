@@ -47,7 +47,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 ### 🔗 Link your Microsoft corporate identity with your personal GitHub account
 
-1. ‼️ Link accounts: https://repos.opensource.microsoft.com/link
+‼️ Link accounts: https://repos.opensource.microsoft.com/link
 
 > [!NOTE]
 > **If additional assistance is required**, follow this walkthrough (VS Code + Copilot setup): <br/>
