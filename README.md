@@ -30,7 +30,8 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
    winget install OpenJS.NodeJS --silent --accept-package-agreements --accept-source-agreements
    ```
 5. Create & Obtain Context7 API KEY
-	- Go to context7: https://context7.com/ and create an account to obtain an API KEY and retain for MCP configuration
+	- Go to context7: https://context7.com/ and create an account to obtain an API KEY </br>
+ 	- Be sure to retain your API Key for MCP configuration later on. </br>
 	- Sign-Up/Sign-In to Context7 using your account preference (GMail / GitHub)
 
 
