@@ -8,7 +8,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 ## What can [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) do for you!?
 
-## Install PowerShell 7, Visual Studio Code (VSCode), NodeJS, and a GitHub account (if needed)
+## Install PowerShell 7, Visual Studio Code (VSCode), NodeJS, and a GitHub (GH) account (if needed)
 
 1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
 		
@@ -92,6 +92,14 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 ---
 
 ## 2.5 Add MCP Servers to GitHub Copilot in VS Code
+
+At this point -- it is far easier to select your desired foundation model and simply PROMPT GitHub Copilot
+to configure your MCP servers as well as install GitHub Copilot CLI.
+
+```console
+Use the following to complete the configuration: https://github.com/dcodev1702/GitHub-Copilot-How-To/edit/main/README.md
+Start from section 2.5 of the README.md and configure MCP servers for GitHub Copilot and GH Copilot CLI contained within the README.md
+```
 
 MCP servers allows GitHub Copilot Chat call trusted tools and retrieve grounded information (docs, browser automation, etc).
 
