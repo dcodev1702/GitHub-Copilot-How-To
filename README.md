@@ -77,8 +77,9 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 ### Verify Copilot Chat + model selector
 
 1. Open the **GitHub Copilot Chat** panel (chat icon near the top right, next to the search bar area).
-2. You should see multiple frontier models available (for example: **GPT-5.2**, **GPT-5.2 Codex**, **Claude Sonnet 4.5**, **Claude Opus 4.6**, **Gemini 3 Pro**, etc.).
-3. If you do — CONGRATULATIONS!! You’re ready to use GitHub Copilot Chat with multiple foundation model options.
+2. You should see multiple Frontier models available (for example: **GPT-5.4**, **GPT-5.3 Codex**, **Claude Sonnet 4.6**, **Claude Opus 4.6**, **Gemini 3.1 Pro**, etc.).
+3. If you do — CONGRATULATIONS!!
+   * You’re now ready to use GitHub Copilot with latest foundation models.
 
 **🟢 GITHUB → SETTINGS → BILLING/LICENSING → LICENSING: YOU SHOULD SEE THIS 🟢**
 
