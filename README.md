@@ -8,17 +8,9 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 ## What can [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) do for you!?
 
-## Set up Visual Studio Code (VSCode), NodeJS, and a GitHub account (if needed)
+## Install PowerShell 7, Visual Studio Code (VSCode), NodeJS, and a GitHub account (if needed)
 
 1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
-
-> [!IMPORTANT]
-> Ensure the following applications are installed / updated
-
-		During setup:
-		✅ Accept defaults
-		
-		Finish the install.
 		
 2. Install **PowerShell 7** from 🖥️ 'Terminal' (CLI)
    ```powershell
