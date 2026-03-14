@@ -97,6 +97,8 @@ At this point -- it is far easier to select your desired foundation model and si
 to configure your MCP servers as well as install GitHub Copilot CLI.
 
 ```console
+# Provide the PROMPT below, inside GitHub Copilot Chat
+
 Use the following to complete the configuration: https://github.com/dcodev1702/GitHub-Copilot-How-To/edit/main/README.md
 Start from section 2.5 of the README.md and configure MCP servers for GitHub Copilot and GH Copilot CLI contained within the README.md
 ```
