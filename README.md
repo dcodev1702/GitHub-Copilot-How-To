@@ -2,8 +2,6 @@
 
 This beginner-friendly guide walks you through setting up GitHub Copilot in **VS Code** and installing **GitHub Copilot CLI**, to include, how to configure **MCP servers** (Model Context Protocol) for richer, tool-backed prompts.
 
-
-
 ---
 
 ## What can [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) do for you!?
@@ -102,6 +100,7 @@ to configure your MCP servers as well as install GitHub Copilot CLI.
 Use the following to complete the configuration: https://github.com/dcodev1702/GitHub-Copilot-How-To/edit/main/README.md
 Start from section 2.5 of the README.md and configure MCP servers for GitHub Copilot and GH Copilot CLI contained within the README.md
 ```
+
 
 
 
