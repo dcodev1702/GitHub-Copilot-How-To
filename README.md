@@ -34,6 +34,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 > [!IMPORTANT]
 > Keep your personal GitHub account secure (strong password + 2FA or Passkey) since it becomes your primary identity for Copilot access.
+> Linking your personal GitHub account with your Microsoft FTE account is the most critical step in this entire process.
 
 5. Create a GitHub account: https://github.com/
 6. Install the GitHub Mobile app on your mobile device.
