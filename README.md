@@ -2,8 +2,7 @@
 
 This beginner-friendly guide walks you through setting up GitHub Copilot in **VS Code** and installing **GitHub Copilot CLI**, to include, how to configure **MCP servers** (Model Context Protocol) for richer, tool-backed prompts.
 
-> [!IMPORTANT]
-> Keep your personal GitHub account secure (strong password + 2FA or Passkey) since it becomes your primary identity for Copilot access.
+
 
 ---
 
@@ -12,7 +11,15 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 ## Set up Visual Studio Code (VSCode), NodeJS, and a GitHub account (if needed)
 
 1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
-   
+
+> [!IMPORTANT]
+> Ensure the following applications are installed / updated
+
+		During setup:
+		✅ Accept defaults
+		
+		Finish the install.
+		
 2. Install **PowerShell 7** from 🖥️ 'Terminal' (CLI)
    ```powershell
    # Install PowerShell 7 (silently / non-interactive)
@@ -32,16 +39,10 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
    ```powershell
    winget install OpenJS.NodeJS --silent --accept-package-agreements --accept-source-agreements
    ```
-   
-> [!TIP]
-> Run the installer
 
-		During setup:
-		✅ Leave npm package manager checked
-		✅ Leave Add to PATH checked
-		✅ Accept defaults (don’t overthink it)
-		
-		Finish the install.
+> [!IMPORTANT]
+> Keep your personal GitHub account secure (strong password + 2FA or Passkey) since it becomes your primary identity for Copilot access.
+
 5. Create a GitHub account: https://github.com/
 6. Install the GitHub Mobile app on your mobile device.
 7. Enable 2FA (two-factor authentication) on your GitHub account.
