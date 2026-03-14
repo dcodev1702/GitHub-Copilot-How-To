@@ -182,8 +182,6 @@ Optional next steps (common troubleshooting):
 
 ![GH CLI Terminal](images/gh_cli_terminal.png)
 
-![image](https://github.com/user-attachments/assets/f3b90d7f-5ea8-46ee-bb6c-f45b1b97bdc6)
-
 ### Confirm Copilot access
 
 1. Go to [Github Copilot](https://copilot.github.microsoft.com/)
