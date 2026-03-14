@@ -109,6 +109,8 @@ Start from section 2.5 of the README.md and configure MCP servers for GitHub Cop
 
 
 ---
+MCP - MANUAL SETUP (w/o using a prompt)
+
 ![image](https://github.com/user-attachments/assets/efe890e8-b2f0-45f8-9043-9d27c25f6ad8)
 
 ### Model Context Protocol (MCP) File path for VS Code
