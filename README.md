@@ -39,7 +39,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
    ```
 5. Install Git for Windows: https://git-scm.com/install/windows
    ```powershell
-   winget install --id Git.Git -e --silent
+   winget install --id Git.Git -e --silent --accept-package-agreements --accept-source-agreements
    ```
 6. Create & Obtain Context7 API KEY
 	- Go to context7: https://context7.com/ and create an account to obtain an API KEY </br>
