@@ -37,7 +37,11 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
    ```powershell
    winget install OpenJS.NodeJS --silent --accept-package-agreements --accept-source-agreements
    ```
-5. Create & Obtain Context7 API KEY
+5. Install Git for Windows: https://git-scm.com/install/windows
+   ```powershell
+   winget install --id Git.Git -e --silent
+   ```
+6. Create & Obtain Context7 API KEY
 	- Go to context7: https://context7.com/ and create an account to obtain an API KEY </br>
  	- Be sure to retain your API Key for MCP configuration later on. </br>
 	- Sign-Up/Sign-In to Context7 using your account preference (GMail / GitHub)
@@ -47,9 +51,9 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 > 🔐 Keep your personal GitHub account secure (strong password + 2FA or Passkey) - SFI! </br>
 > 🔥 Linking your personal GitHub account with your Microsoft FTE account is the most critical step in this entire process.
 
-5. Create a GitHub account: https://github.com/
-6. Install the GitHub Mobile app on your mobile device. 📱
-7. Enable 2FA (two-factor authentication) on your GitHub account.
+7. Create a GitHub account: https://github.com/
+8. Install the GitHub Mobile app on your mobile device. 📱
+9. Enable 2FA (two-factor authentication) on your GitHub account.
    * Recommended: configure 2FA so you can approve sign-ins from the mobile app. See the [GitHub 2FA docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
 
 ---
