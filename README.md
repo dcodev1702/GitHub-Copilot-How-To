@@ -26,20 +26,20 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 3. Install VSCode: https://code.visualstudio.com/
    ```powershell
    # Install VS Code (silently / non-interactively)
-   winget install Microsoft.VisualStudioCode --silent --accept-package-agreements --accept-source-agreements
+   winget install Microsoft.VisualStudioCode --source winget --silent --accept-package-agreements --accept-source-agreements
    ```
 4. Install NodeJS: https://nodejs.org/en
    ```powershell
    # Latest LTS (recommended) (silently / non-interactively)
-   winget install OpenJS.NodeJS.LTS --silent --accept-package-agreements --accept-source-agreements
+   winget install OpenJS.NodeJS.LTS --source winget --silent --accept-package-agreements --accept-source-agreements
    ```
    Or you can install the latest - Current (25.x)
    ```powershell
-   winget install OpenJS.NodeJS --silent --accept-package-agreements --accept-source-agreements
+   winget install OpenJS.NodeJS --source winget --silent --accept-package-agreements --accept-source-agreements
    ```
 5. Install Git for Windows: https://git-scm.com/install/windows
    ```powershell
-   winget install --id Git.Git -e --silent --accept-package-agreements --accept-source-agreements
+   winget install --id Git.Git -e --source winget --silent --accept-package-agreements --accept-source-agreements
    ```
 6. Create & Obtain Context7 API KEY
 	- Go to context7: https://context7.com/ and create an account to obtain an API KEY </br>
