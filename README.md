@@ -107,7 +107,7 @@ At this point -- it is far easier to select your desired foundation model and si
 ```console
 # Provide the PROMPT below, inside GitHub Copilot Chat
 
-Use the following README as the setup guide: https://github.com/dcodev1702/GitHub-Copilot-How-To/edit/main/README.md
+Use the following README as the setup guide: https://github.com/dcodev1702/GitHub-Copilot-How-To/blob/main/README.md
 
 Start from section 3.5 of the README.md. Install or verify the MCP prerequisites, including Node.js LTS, Git for Windows, and the Context7 account/API key setup. Then configure MCP servers for GitHub Copilot in VS Code and GitHub Copilot CLI using the JSON examples contained in the README  Validate for correctness and prompt me for elevated authentication as required.
 ```
