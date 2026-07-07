@@ -4,7 +4,7 @@ This beginner-friendly guide walks you through setting up your GitHub Copilot En
 
 ---
 
-## Optional: Create a Dev Box before you start
+## OPTIONAL: Create a Dev Box to employ GHCP | GHCP Desktop | GHCP CLI
 
 If your personal hardware is older, storage-constrained, or already working hard during GenAI-assisted workflows, consider setting up a Microsoft Dev Box before starting this guide. A Dev Box gives you an "always on" cloud workstation where VS Code, GitHub Copilot, terminal sessions, MCP servers, and automation can run without taxing your local CPU, memory, storage, or battery. Because the workspace lives in the cloud, it can meet you wherever you have an Internet connection, whether you connect from your laptop, another device, the Windows App, or a browser.
 
