@@ -1,16 +1,14 @@
-# 🏆 GitHub Copilot | GitHub Copilot CLI for Microsoft FTEs
+# 🏆 GitHub Copilot Enterprise | GitHub Copilot CLI for Microsoft FTEs
 
 This beginner-friendly guide walks you through setting up your GitHub Copilot Enterprise license and employ the latest frontier models in **VS Code**, **GitHub Copilot Desktop Application**, and **GitHub Copilot CLI** to include, how to configure **MCP servers** (Model Context Protocol) for richer, tool-backed experience.
 
 ---
 
-## What can [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) do for you!?
-
-## Install PowerShell 7, Visual Studio Code, NodeJS, and a GitHub (GH) account (if needed)
+## Install PowerShell 7, Visual Studio Code, and create a personal GitHub (GH) account (if needed)
 
 1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
 		
-2. Install **PowerShell 7, et al** from the 🖥️ 'Terminal' (CLI)
+2. Install **PowerShell 7** from the 🖥️ 'Terminal' (CLI)
    ```powershell
    # Install PowerShell 7 (silently / non-interactive)
    winget install --id Microsoft.PowerShell --source winget --silent --accept-package-agreements --accept-source-agreements
@@ -32,7 +30,7 @@ This beginner-friendly guide walks you through setting up your GitHub Copilot En
 
 > [!IMPORTANT]
 > 🔐 Keep your personal GitHub account secure (strong password + 2FA or Passkey) - SFI! </br>
-> 🔥 Linking your personal GitHub account with your Microsoft FTE account is the most critical step in this entire process.
+> 🔥 Linking your **personal GitHub account** with your **Microsoft FTE account** is the most critical step in this entire process.
 
 4. Create a GitHub account: https://github.com/
    * Install the GitHub Mobile app on your mobile device. 📱
@@ -92,10 +90,6 @@ The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a 
 3. If you do — CONGRATULATIONS!! 👏👏👏
    * You’re now ready to use GitHub Copilot with latest foundation models.
 
-**🟢 GITHUB PROFILE → SETTINGS → BILLING/LICENSING → LICENSING: YOU SHOULD SEE THIS 🟢**
-
-![image](https://github.com/user-attachments/assets/37606a6a-64c7-4452-89ac-25a37be8fa23)
-
 **🟢 VS CODE: YOU SHOULD SEE THIS 🟢**
 ![image](https://github.com/user-attachments/assets/9f8e5d1f-4383-4507-a7b9-53407c88609b)
 
@@ -105,9 +99,24 @@ The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a 
 
 MCP servers allow GitHub Copilot Chat in VS Code to call trusted tools and retrieve grounded information (docs, browser automation, etc).
 
-### Install MCP prerequisites
+### Configure MCP with GitHub Copilot Chat
 
-Before configuring MCP servers, make sure Node.js, Git, and your Context7 API key are ready.
+At this point -- it is far easier to select your desired foundation model and simply PROMPT GitHub Copilot to install the MCP prerequisites, configure your MCP servers, and install GitHub Copilot CLI.
+
+```console
+# Provide the PROMPT below, inside GitHub Copilot Chat
+
+Use the following README as the setup guide: https://github.com/dcodev1702/GitHub-Copilot-How-To/edit/main/README.md
+
+Start from section 3.5 of the README.md. Install or verify the MCP prerequisites, including Node.js LTS, Git for Windows, and the Context7 account/API key setup. Then configure MCP servers for GitHub Copilot in VS Code and GitHub Copilot CLI using the JSON examples contained in the README.
+```
+
+
+![Prompt-To-MCP](images/MCP_Config_via_Prompt.jpg)
+
+### MCP prerequisites the prompt will install or verify
+
+The prompt above should install or verify Node.js and Git, then guide you through Context7 account/API key setup. Use the commands below only if you want to perform the prerequisite setup manually.
 
 1. Install NodeJS: https://nodejs.org/en
    ```powershell
@@ -126,20 +135,6 @@ Before configuring MCP servers, make sure Node.js, Git, and your Context7 API ke
    - Go to context7: https://context7.com/ and create an account to obtain an API KEY </br>
    - Be sure to retain your API Key for MCP configuration later on. </br>
    - Sign-Up/Sign-In to Context7 using your account preference (GMail / GitHub)
-
-### Configure MCP with GitHub Copilot Chat
-
-At this point -- it is far easier to select your desired foundation model and simply PROMPT GitHub Copilot to configure your MCP servers as well as install GitHub Copilot CLI.
-
-```console
-# Provide the PROMPT below, inside GitHub Copilot Chat
-
-Use the following to complete the configuration: https://github.com/dcodev1702/GitHub-Copilot-How-To/edit/main/README.md
-Start from section 3.5 of the README.md and configure MCP servers for GitHub Copilot and GH Copilot CLI contained within the README.md
-```
-
-
-![Prompt-To-MCP](images/MCP_Config_via_Prompt.jpg)
 
 ### MCP Manual Setup (w/o using a prompt)
 
@@ -196,6 +191,8 @@ Optional next steps (common troubleshooting):
 ---
 
 ## 4. Install GitHub Copilot CLI
+
+## What can [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) do for you!?
 
 ![GH CLI Terminal](images/gh_cli_terminal.png)
 
