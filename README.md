@@ -23,12 +23,18 @@ This beginner-friendly guide walks you through setting up your GitHub Copilot En
 
 	![image](images/pwsh_7_terminal.jpg)
 
+3. Install VSCode: https://code.visualstudio.com/
+   ```powershell
+   # Install VS Code (silently / non-interactively)
+   winget install Microsoft.VisualStudioCode --source winget --silent --accept-package-agreements --accept-source-agreements
+   ```
+
 
 > [!IMPORTANT]
 > 🔐 Keep your personal GitHub account secure (strong password + 2FA or Passkey) - SFI! </br>
 > 🔥 Linking your personal GitHub account with your Microsoft FTE account is the most critical step in this entire process.
 
-3. Create a GitHub account: https://github.com/
+4. Create a GitHub account: https://github.com/
    * Install the GitHub Mobile app on your mobile device. 📱
    * Enable 2FA (two-factor authentication) on your GitHub account.
      * Recommended: configure 2FA so you can approve sign-ins from the mobile app. See the [GitHub 2FA docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
@@ -42,6 +48,7 @@ This beginner-friendly guide walks you through setting up your GitHub Copilot En
 ‼️ Link accounts: https://copilot.github.microsoft.com/  <br/>
    * Validate your accounts are linked: https://repos.opensource.microsoft.com/link
 
+**🟢 GITHUB PROFILE → SETTINGS → BILLING/LICENSING → LICENSING: YOU SHOULD SEE THIS 🟢**
 ![image](images/GHCP_Enterprise_License.jpg)
 
 
@@ -60,49 +67,16 @@ The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a 
 3. Open the app and sign in with the **personal GitHub account** that you linked to your Microsoft corporate account.
 4. Confirm that Copilot recognizes your Enterprise license and that the model selector is available.
 
+
 > [!TIP]
 > If Copilot does not recognize your license, return to https://copilot.github.microsoft.com/ and confirm your personal GitHub account is linked and eligible.
 
 ---
 
-3. Install VSCode: https://code.visualstudio.com/
-   ```powershell
-   # Install VS Code (silently / non-interactively)
-   winget install Microsoft.VisualStudioCode --source winget --silent --accept-package-agreements --accept-source-agreements
-   ```
-4. Install NodeJS: https://nodejs.org/en
-   ```powershell
-   # Latest LTS (recommended) (silently / non-interactively)
-   winget install OpenJS.NodeJS.LTS --source winget --silent --accept-package-agreements --accept-source-agreements
-   ```
-   Or you can install the latest - Current (25.x)
-   ```powershell
-   winget install OpenJS.NodeJS --source winget --silent --accept-package-agreements --accept-source-agreements
-   ```
-5. Install Git for Windows: https://git-scm.com/install/windows
-   ```powershell
-   winget install --id Git.Git -e --source winget --silent --accept-package-agreements --accept-source-agreements
-   ```
-6. Create & Obtain Context7 API KEY
-	- Go to context7: https://context7.com/ and create an account to obtain an API KEY </br>
- 	- Be sure to retain your API Key for MCP configuration later on. </br>
-	- Sign-Up/Sign-In to Context7 using your account preference (GMail / GitHub)
-
-
-
-
 
 ## 3. VS Code integration with GitHub Copilot
 
-### Install the right extensions
-
-1. Open **VS Code** → **Extensions**.
-2. Install:
-   
-   ✅ **GitHub Copilot** <br/>
-   ✅ **GitHub Copilot for Azure** <br/>
-
-### 💻 Sign in (VS Code Accounts)
+### 💻 Sign in to VS Code
 
 1. In VS Code, open **Accounts** (person icon) → sign in.
 2. Sign in using the **personal GitHub account** that you linked to your Microsoft corporate account.
@@ -118,22 +92,44 @@ The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a 
 3. If you do — CONGRATULATIONS!! 👏👏👏
    * You’re now ready to use GitHub Copilot with latest foundation models.
 
-**🟢 GITHUB → SETTINGS → BILLING/LICENSING → LICENSING: YOU SHOULD SEE THIS 🟢**
+**🟢 GITHUB PROFILE → SETTINGS → BILLING/LICENSING → LICENSING: YOU SHOULD SEE THIS 🟢**
 
 ![image](https://github.com/user-attachments/assets/37606a6a-64c7-4452-89ac-25a37be8fa23)
 
 **🟢 VS CODE: YOU SHOULD SEE THIS 🟢**
 ![image](https://github.com/user-attachments/assets/9f8e5d1f-4383-4507-a7b9-53407c88609b)
 
-
 ---
 
-## 3.5 Add MCP Servers to GitHub Copilot in VS Code
+## 3.5 Add MCP Servers to GHCP in VS Code
 
-MCP servers allows GitHub Copilot Chat call trusted tools and retrieve grounded information (docs, browser automation, etc).
+MCP servers allow GitHub Copilot Chat in VS Code to call trusted tools and retrieve grounded information (docs, browser automation, etc).
 
-At this point -- it is far easier to select your desired foundation model and simply PROMPT GitHub Copilot
-to configure your MCP servers as well as install GitHub Copilot CLI.
+### Install MCP prerequisites
+
+Before configuring MCP servers, make sure Node.js, Git, and your Context7 API key are ready.
+
+1. Install NodeJS: https://nodejs.org/en
+   ```powershell
+   # Latest LTS (recommended) (silently / non-interactively)
+   winget install OpenJS.NodeJS.LTS --source winget --silent --accept-package-agreements --accept-source-agreements
+   ```
+   Or you can install the latest - Current (25.x)
+   ```powershell
+   winget install OpenJS.NodeJS --source winget --silent --accept-package-agreements --accept-source-agreements
+   ```
+2. Install Git for Windows: https://git-scm.com/install/windows
+   ```powershell
+   winget install --id Git.Git -e --source winget --silent --accept-package-agreements --accept-source-agreements
+   ```
+3. Create & Obtain Context7 API KEY
+   - Go to context7: https://context7.com/ and create an account to obtain an API KEY </br>
+   - Be sure to retain your API Key for MCP configuration later on. </br>
+   - Sign-Up/Sign-In to Context7 using your account preference (GMail / GitHub)
+
+### Configure MCP with GitHub Copilot Chat
+
+At this point -- it is far easier to select your desired foundation model and simply PROMPT GitHub Copilot to configure your MCP servers as well as install GitHub Copilot CLI.
 
 ```console
 # Provide the PROMPT below, inside GitHub Copilot Chat
@@ -145,20 +141,17 @@ Start from section 3.5 of the README.md and configure MCP servers for GitHub Cop
 
 ![Prompt-To-MCP](images/MCP_Config_via_Prompt.jpg)
 
-
-
----
-## MCP - MANUAL SETUP (w/o using a prompt)
+### MCP Manual Setup (w/o using a prompt)
 
 ![image](https://github.com/user-attachments/assets/efe890e8-b2f0-45f8-9043-9d27c25f6ad8)
 
-### Model Context Protocol (MCP) File path for VS Code
+#### Model Context Protocol (MCP) File path for VS Code
 
 Create or edit this file:
 
 * `C:\Users\%USERNAME%\AppData\Roaming\Code\User\mcp.json`
 
-### Copy/paste this JSON into `mcp.json`
+#### Copy/paste this JSON into `mcp.json`
 
 > [!NOTE]
 > The format / structure for mcp.json is **different** than mcp-config.json (GitHub Copilot CLI)
