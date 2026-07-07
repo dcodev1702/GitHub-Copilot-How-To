@@ -43,6 +43,7 @@ This beginner-friendly guide walks you through setting up your GitHub Copilot En
 
 ### 🔗 Link your Microsoft corporate identity with your personal GitHub account
 
+‼️ Video How-To: https://aka.ms/pawvideo <br/>
 ‼️ Link accounts: https://copilot.github.microsoft.com/  <br/>
    * Validate your accounts are linked: https://repos.opensource.microsoft.com/link
 
