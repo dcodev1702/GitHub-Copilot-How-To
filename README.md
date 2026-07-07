@@ -87,12 +87,12 @@ The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a 
 ### Verify GitHub Copilot Chat + model selector
 
 1. Open the **GitHub Copilot Chat** panel (chat icon near the top right, next to the search bar area).
-2. You should see multiple Frontier models available (for example: **GPT-5.4**, **Claude Sonnet 4.6**, **Claude Opus 4.6**, **Gemini 3.1 Pro**, etc.).
+2. You should see multiple Frontier models available (for example: **GPT-5.5**, **Claude Sonnet 5**, **Claude Opus 4.8**, **Gemini 3.1 Pro**, etc.).
 3. If you do — CONGRATULATIONS!! 👏👏👏
    * You’re now ready to use GitHub Copilot with latest foundation models.
 
 **🟢 VS CODE: YOU SHOULD SEE THIS 🟢**
-![image](https://github.com/user-attachments/assets/9f8e5d1f-4383-4507-a7b9-53407c88609b)
+![image](images/GHCP_Model_Selection.jpg)
 
 ---
 
