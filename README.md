@@ -65,6 +65,7 @@ The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a 
 3. Open the app and sign in with the **personal GitHub account** that you linked to your Microsoft corporate account.
 4. Confirm that Copilot recognizes your Enterprise license and that the model selector is available.
 
+![image](images/GHCP_Desktop_Application.jpg)
 
 > [!TIP]
 > If Copilot does not recognize your license, return to https://copilot.github.microsoft.com/ and confirm your personal GitHub account is linked and eligible.
@@ -95,9 +96,9 @@ The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a 
 
 ---
 
-## 3.5 Add MCP Servers to GHCP in VS Code
+## 3.5 Use Gen AI to add & configure MCP Servers (GHCP & GHCP CLI)
 
-MCP servers allow GitHub Copilot Chat in VS Code to call trusted tools and retrieve grounded information (docs, browser automation, etc).
+MCP servers allow GitHub Copilot in VS Code to call trusted tools and retrieve grounded information (docs, browser automation, etc).
 
 ### Configure MCP with GitHub Copilot Chat
 
@@ -108,7 +109,7 @@ At this point -- it is far easier to select your desired foundation model and si
 
 Use the following README as the setup guide: https://github.com/dcodev1702/GitHub-Copilot-How-To/edit/main/README.md
 
-Start from section 3.5 of the README.md. Install or verify the MCP prerequisites, including Node.js LTS, Git for Windows, and the Context7 account/API key setup. Then configure MCP servers for GitHub Copilot in VS Code and GitHub Copilot CLI using the JSON examples contained in the README.
+Start from section 3.5 of the README.md. Install or verify the MCP prerequisites, including Node.js LTS, Git for Windows, and the Context7 account/API key setup. Then configure MCP servers for GitHub Copilot in VS Code and GitHub Copilot CLI using the JSON examples contained in the README  Validate for correctness and prompt me for elevated authentication as required.
 ```
 
 
