@@ -1,6 +1,6 @@
 # 🏆 GitHub Copilot | GitHub Copilot CLI for Microsoft FTEs
 
-This beginner-friendly guide walks you through setting up GitHub Copilot in **VS Code** and installing **GitHub Copilot CLI**, to include, how to configure **MCP servers** (Model Context Protocol) for richer, tool-backed prompts.
+This beginner-friendly guide walks you through setting up your GitHub Copilot Enterprise license and employ the latest frontier models in **VS Code**, **GitHub Copilot Desktop Application**, and **GitHub Copilot CLI** to include, how to configure **MCP servers** (Model Context Protocol) for richer, tool-backed experience.
 
 ---
 
@@ -22,6 +22,48 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 	![image](https://github.com/user-attachments/assets/4373aee1-5007-43ff-ae3b-3dcd068ade77)
 
 	![image](images/pwsh_7_terminal.jpg)
+
+
+> [!IMPORTANT]
+> 🔐 Keep your personal GitHub account secure (strong password + 2FA or Passkey) - SFI! </br>
+> 🔥 Linking your personal GitHub account with your Microsoft FTE account is the most critical step in this entire process.
+
+3. Create a GitHub account: https://github.com/
+   * Install the GitHub Mobile app on your mobile device. 📱
+   * Enable 2FA (two-factor authentication) on your GitHub account.
+     * Recommended: configure 2FA so you can approve sign-ins from the mobile app. See the [GitHub 2FA docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
+
+---
+
+## 1. Set up GitHub Copilot Enterprise License (Microsoft FTE workflow)
+
+### 🔗 Link your Microsoft corporate identity with your personal GitHub account
+
+‼️ Link accounts: https://copilot.github.microsoft.com/  <br/>
+   * Validate your accounts are linked: https://repos.opensource.microsoft.com/link
+
+![image](images/GHCP_Enterprise_License.jpg)
+
+
+> [!NOTE]
+> **If additional assistance is required**, follow this walkthrough (VS Code + Copilot setup): <br/>
+> https://github.com/mcaps-microsoft/Getting-Started-with-GitHub-Copilot-and-VSCode/blob/main/Getting_Started_with_GitHub_Copilot_and_VSCode.md <br/>
+
+---
+
+## 2. Install the GitHub Copilot Desktop Application
+
+The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a dedicated desktop experience for GitHub Copilot outside the browser and VS Code.
+
+1. Go to the [GitHub Copilot app download page](https://github.com/features/ai/github-app).
+2. Download and install the GitHub Copilot desktop app for your operating system.
+3. Open the app and sign in with the **personal GitHub account** that you linked to your Microsoft corporate account.
+4. Confirm that Copilot recognizes your Enterprise license and that the model selector is available.
+
+> [!TIP]
+> If Copilot does not recognize your license, return to https://copilot.github.microsoft.com/ and confirm your personal GitHub account is linked and eligible.
+
+---
 
 3. Install VSCode: https://code.visualstudio.com/
    ```powershell
@@ -47,30 +89,10 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 	- Sign-Up/Sign-In to Context7 using your account preference (GMail / GitHub)
 
 
-> [!IMPORTANT]
-> 🔐 Keep your personal GitHub account secure (strong password + 2FA or Passkey) - SFI! </br>
-> 🔥 Linking your personal GitHub account with your Microsoft FTE account is the most critical step in this entire process.
 
-7. Create a GitHub account: https://github.com/
-8. Install the GitHub Mobile app on your mobile device. 📱
-9. Enable 2FA (two-factor authentication) on your GitHub account.
-   * Recommended: configure 2FA so you can approve sign-ins from the mobile app. See the [GitHub 2FA docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
 
----
 
-## 1. Set up GitHub Copilot (Microsoft FTE flow)
-
-### 🔗 Link your Microsoft corporate identity with your personal GitHub account
-
-‼️ Link accounts: https://repos.opensource.microsoft.com/link
-
-> [!NOTE]
-> **If additional assistance is required**, follow this walkthrough (VS Code + Copilot setup): <br/>
-> https://github.com/mcaps-microsoft/Getting-Started-with-GitHub-Copilot-and-VSCode/blob/main/Getting_Started_with_GitHub_Copilot_and_VSCode.md <br/>
-
----
-
-## 2. VS Code integration with GitHub Copilot
+## 3. VS Code integration with GitHub Copilot
 
 ### Install the right extensions
 
@@ -106,7 +128,7 @@ This beginner-friendly guide walks you through setting up GitHub Copilot in **VS
 
 ---
 
-## 2.5 Add MCP Servers to GitHub Copilot in VS Code
+## 3.5 Add MCP Servers to GitHub Copilot in VS Code
 
 MCP servers allows GitHub Copilot Chat call trusted tools and retrieve grounded information (docs, browser automation, etc).
 
@@ -117,7 +139,7 @@ to configure your MCP servers as well as install GitHub Copilot CLI.
 # Provide the PROMPT below, inside GitHub Copilot Chat
 
 Use the following to complete the configuration: https://github.com/dcodev1702/GitHub-Copilot-How-To/edit/main/README.md
-Start from section 2.5 of the README.md and configure MCP servers for GitHub Copilot and GH Copilot CLI contained within the README.md
+Start from section 3.5 of the README.md and configure MCP servers for GitHub Copilot and GH Copilot CLI contained within the README.md
 ```
 
 
