@@ -4,6 +4,14 @@ This beginner-friendly guide walks you through setting up your GitHub Copilot En
 
 ---
 
+## Optional: Create a Dev Box before you start
+
+If your personal hardware is older, storage-constrained, or already working hard during GenAI-assisted workflows, consider setting up a Microsoft Dev Box before starting this guide. A Dev Box gives you an "always on" cloud workstation where VS Code, GitHub Copilot, terminal sessions, MCP servers, and automation can run without taxing your local CPU, memory, storage, or battery. Because the workspace lives in the cloud, it can meet you wherever you have an Internet connection, whether you connect from your laptop, another device, the Windows App, or a browser.
+
+Start here: [Microsoft Dev Box Enablement Guide](devbox-enablement.md)
+
+---
+
 ## Install PowerShell 7, Visual Studio Code, and create a personal GitHub (GH) account (if needed)
 
 1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
@@ -42,8 +50,6 @@ This beginner-friendly guide walks you through setting up your GitHub Copilot En
 ## 1. Set up GitHub Copilot Enterprise License (Microsoft FTE workflow)
 
 ### 🔗 Link your Microsoft corporate identity with your personal GitHub account
-
-‼️ Video How-To: https://aka.ms/pawvideo <br/>
 
 ‼️ Link accounts: https://copilot.github.microsoft.com/  <br/>
    * Validate your accounts are linked: https://repos.opensource.microsoft.com/link
@@ -100,7 +106,7 @@ The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a 
 
 ## 3.5 Use Gen AI to add & configure MCP Servers (GHCP & GHCP CLI)
 
-MCP servers allow GitHub Copilot in VS Code to call trusted tools and retrieve grounded information (docs, browser automation, etc).
+MCP stands for **Model Context Protocol**, a standard way for an LLM to connect to external tools, resources, and data sources. Think of MCP like a USB hub for your LLM: it gives GitHub Copilot a consistent way to plug into different capabilities such as documentation lookup, web navigation, browser automation, and enterprise services. With MCP enabled, GitHub Copilot can use trusted servers to retrieve grounded information and perform tool-backed actions from VS Code or the Copilot CLI.
 
 ### Configure MCP with GitHub Copilot Chat
 
@@ -111,7 +117,7 @@ At this point -- it is far easier to select your desired foundation model and si
 
 Use the following README as the setup guide: https://github.com/dcodev1702/GitHub-Copilot-How-To/blob/main/README.md
 
-Start from section 3.5 of the README.md. Install or verify the MCP prerequisites, including Node.js LTS, Git for Windows, and the Context7 account/API key setup. Then configure MCP servers for GitHub Copilot in VS Code and GitHub Copilot CLI using the JSON examples contained in the README  Validate for correctness and prompt me for elevated authentication as required.
+Start from section 3.5 of the README.md. Install or verify the MCP prerequisites, including Node.js LTS, Git for Windows, and the Context7 account/API key setup. Then configure MCP servers for GitHub Copilot in VS Code and GitHub Copilot CLI using the JSON examples contained in the README. DO NOT configure PAW (# 7) in the README. Lastly, validate for correctness and prompt me for elevated authentication as required.
 ```
 
 
@@ -239,7 +245,7 @@ copilot --banner
 2. Select your preferred model. Example (as used in many demos):
 
 ```text
-/model claude-opus-4.6
+/model claude-opus-4.8
 ```
 
 > [!TIP]
@@ -302,6 +308,12 @@ Copy/paste this JSON into `mcp-config.json` (Context7 key omitted):
 * Watch Scott Hanselman harness the power of GitHub Copilot CLI w/ MCP and Copilot Skills & [Handy](https://handy.computer/)
 
 ---
+
+## 7. Product Maker AI Workspace
+
+Product Maker AI Workspace (PAW) helps you follow the end-to-end workflow for enabling your GitHub Copilot Enterprise license and using the PAW workflow.
+
+* ‼️ Video How-To: https://aka.ms/pawvideo <br/>
 
 ## Valuable Resources
 
