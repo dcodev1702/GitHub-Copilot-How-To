@@ -12,7 +12,7 @@ Start here: [Microsoft Dev Box Enablement Guide](devbox-enablement.md)
 
 ---
 
-## Install PowerShell 7, Visual Studio Code, and create a personal GitHub (GH) account (if needed)
+## 1. Install PowerShell 7, Visual Studio Code, and create a personal GitHub (GH) account (if needed)
 
 1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
 		
@@ -47,7 +47,7 @@ Start here: [Microsoft Dev Box Enablement Guide](devbox-enablement.md)
 
 ---
 
-## 1. Set up GitHub Copilot Enterprise License (Microsoft FTE workflow)
+## 2. Set up GitHub Copilot Enterprise License (Microsoft FTE workflow)
 
 ### 🔗 Link your Microsoft corporate identity with your personal GitHub account
 
@@ -64,7 +64,7 @@ Start here: [Microsoft Dev Box Enablement Guide](devbox-enablement.md)
 
 ---
 
-## 2. Install the GitHub Copilot Desktop Application
+## 3. Install the GitHub Copilot Desktop Application
 
 The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a dedicated desktop experience for GitHub Copilot outside the browser and VS Code.
 
@@ -81,7 +81,7 @@ The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a 
 ---
 
 
-## 3. VS Code integration with GitHub Copilot
+## 4. VS Code integration with GitHub Copilot
 
 ### 💻 Sign in to VS Code
 
@@ -104,7 +104,7 @@ The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a 
 
 ---
 
-## 3.5 Use Gen AI to add & configure MCP Servers (GHCP & GHCP CLI)
+## 4.5 Use Gen AI to add & configure MCP Servers (GHCP & GHCP CLI)
 
 MCP stands for **Model Context Protocol**, a standard way for an LLM to connect to external tools, resources, and data sources. Think of MCP like a USB hub for your LLM: it gives GitHub Copilot a consistent way to plug into different capabilities such as documentation lookup, web navigation, browser automation, and enterprise services. With MCP enabled, GitHub Copilot can use trusted servers to retrieve grounded information and perform tool-backed actions from VS Code or the Copilot CLI.
 
@@ -117,7 +117,7 @@ At this point -- it is far easier to select your desired foundation model and si
 
 Use the following README as the setup guide: https://github.com/dcodev1702/GitHub-Copilot-How-To/blob/main/README.md
 
-Start from section 3.5 of the README.md. Install or verify the MCP prerequisites, including Node.js LTS, Git for Windows, and the Context7 account/API key setup. Then configure MCP servers for GitHub Copilot in VS Code and GitHub Copilot CLI using the JSON examples contained in the README. DO NOT configure PAW (# 7) in the README. Lastly, validate for correctness and prompt me for elevated authentication as required.
+Start from section 4.5 of the README.md. Install or verify the MCP prerequisites, including Node.js LTS, Git for Windows, and the Context7 account/API key setup. Then configure MCP servers for GitHub Copilot in VS Code and GitHub Copilot CLI using the JSON examples contained in the README. DO NOT configure PAW (# 8) in the README. Lastly, validate for correctness and prompt me for elevated authentication as required.
 ```
 
 
@@ -199,7 +199,7 @@ Optional next steps (common troubleshooting):
 
 ---
 
-## 4. Install GitHub Copilot CLI
+## 5. Install GitHub Copilot CLI
 
 ## What can [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) do for you!?
 
@@ -298,18 +298,18 @@ Copy/paste this JSON into `mcp-config.json` (Context7 key omitted):
 
 ---
 
-## 5. GitHub Copilot CLI How-To's
+## 6. GitHub Copilot CLI How-To's
 
 * https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli
 
-## 6. Join the Microsoft AI Community of Interest
+## 7. Join the Microsoft AI Community of Interest
 
 * https://aka.ms/garage/skillupai
 * Watch Scott Hanselman harness the power of GitHub Copilot CLI w/ MCP and Copilot Skills & [Handy](https://handy.computer/)
 
 ---
 
-## 7. Product Maker AI Workspace
+## 8. Product Maker AI Workspace (Advanced)
 
 Product Maker AI Workspace (PAW) helps you follow the end-to-end workflow for enabling your GitHub Copilot Enterprise license and using the PAW workflow.
 
