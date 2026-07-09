@@ -40,18 +40,21 @@ Start here: [Microsoft Dev Box Enablement Guide](devbox-enablement.md)
 > 🔐 Keep your personal GitHub account secure (strong password + 2FA or Passkey) - SFI! </br>
 > 🔥 Linking your **personal GitHub account** with your **Microsoft FTE account** is the most critical step in this entire process.
 
-4. Create a GitHub account: https://github.com/
-   * Install the GitHub Mobile app on your mobile device. 📱
+4. Create a personal GitHub account: https://github.com/
+   * Install the GitHub Mobile app on your mobile device and login. 📱
    * Enable 2FA (two-factor authentication) on your GitHub account.
+     * **🟢 GitHub Profile (upper right) → Settings  → Password & Authentication → Enable MFA & set perferred method 🟢**
      * Recommended: configure 2FA so you can approve sign-ins from the mobile app. See the [GitHub 2FA docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
+  
+  ![image](images/GH_Enable_MFA.jpg)
 
 ---
 
-## 2. Set up GitHub Copilot Enterprise License (Microsoft FTE workflow)
+## 2. **CRITICAL STEP** - Set up GitHub Copilot Enterprise License (Microsoft FTE workflow)
 
-### 🔗 Link your Microsoft corporate identity with your personal GitHub account
+### 🔗 Link your Microsoft corporate identity (alias_microsoft) with your personal GitHub account
 
-‼️ Link accounts: https://copilot.github.microsoft.com/  <br/>
+‼️ Link the two accounts: https://copilot.github.microsoft.com/  <br/>
    * Validate your accounts are linked: https://repos.opensource.microsoft.com/link
 
 **🟢 GITHUB PROFILE → SETTINGS → BILLING/LICENSING → LICENSING: YOU SHOULD SEE THIS 🟢**
