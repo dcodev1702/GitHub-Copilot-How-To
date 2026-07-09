@@ -52,10 +52,14 @@ Start here: [Microsoft Dev Box Enablement Guide](devbox-enablement.md)
 
 ## 2. **CRITICAL STEP** - Set up GitHub Copilot Enterprise License (Microsoft FTE workflow)
 
+![image](images/GitHub_Copilot_Linking_Accounts.jpg)
+
 ### 🔗 Link your Microsoft corporate identity (alias_microsoft) with your personal GitHub account
 
 ‼️ Link the two accounts: https://copilot.github.microsoft.com/  <br/>
    * Validate your accounts are linked: https://repos.opensource.microsoft.com/link
+
+  ![image](images/GitHub_Copilot_Linking_Accounts_2.jpg)
 
 **🟢 GITHUB PROFILE → SETTINGS → BILLING/LICENSING → LICENSING: YOU SHOULD SEE THIS 🟢**
 ![image](images/GHCP_Enterprise_License.jpg)
