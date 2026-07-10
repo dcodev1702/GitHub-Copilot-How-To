@@ -246,7 +246,7 @@ The product commands account for VS Code profiles, remote sessions, and Dev Boxe
 1. Run **MCP: Add Server** from the Command Palette to add a server through a guided flow.
 1. Run **MCP: Open User Configuration** to inspect the profile-specific `mcp.json` file. Choose user configuration for all workspaces or `.vscode/mcp.json` only when the configuration should be shared with one trusted repository.
 
-![VS Code interface for adding and configuring MCP servers](https://github.com/user-attachments/assets/efe890e8-b2f0-45f8-9043-9d27c25f6ad8)
+![VS Code interface for adding and configuring MCP servers](images/GHCP_MCP_Selection.jpg)
 
 For manual setup, the following is a keyless, user-level starting configuration:
 
