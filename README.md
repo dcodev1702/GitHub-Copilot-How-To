@@ -19,17 +19,38 @@ Optional: [join the Microsoft AI community](https://aka.ms/garage/skillupai/viva
 
 ## Contents
 
-- [Optional: Use a Microsoft Dev Box](#optional-use-a-microsoft-dev-box)
-- [1. Install PowerShell, VS Code, and Create a GitHub Account](#1-install-powershell-vs-code-and-create-a-github-account)
-- [2. Set Up Your GitHub Copilot Enterprise License](#2-set-up-your-github-copilot-enterprise-license)
-- [3. Install the GitHub Copilot App](#3-install-the-github-copilot-app)
-- [4. Connect GitHub Copilot to VS Code](#4-connect-github-copilot-to-vs-code)
-- [5. Configure MCP Servers](#5-configure-mcp-servers)
-- [6. Install and Use GitHub Copilot CLI](#6-install-and-use-github-copilot-cli)
-- [7. Explore GitHub Copilot CLI](#7-explore-github-copilot-cli)
-- [8. Join the Microsoft AI Community](#8-join-the-microsoft-ai-community)
-- [9. Product Maker AI Workspace](#9-product-maker-ai-workspace)
-- [Valuable Resources](#valuable-resources)
+- [🏆 GitHub Copilot Enterprise and CLI for Microsoft FTEs](#-github-copilot-enterprise-and-cli-for-microsoft-ftes)
+  - [Before You Start](#before-you-start)
+  - [Contents](#contents)
+  - [Optional: Use a Microsoft Dev Box](#optional-use-a-microsoft-dev-box)
+  - [1. Install PowerShell, VS Code, and Create a GitHub Account](#1-install-powershell-vs-code-and-create-a-github-account)
+    - [Install PowerShell 7](#install-powershell-7)
+    - [Install Visual Studio Code](#install-visual-studio-code)
+    - [Secure Your Personal GitHub Account](#secure-your-personal-github-account)
+  - [2. Set Up Your GitHub Copilot Enterprise License](#2-set-up-your-github-copilot-enterprise-license)
+    - [Link Your Microsoft and GitHub Accounts](#link-your-microsoft-and-github-accounts)
+  - [3. Install the GitHub Copilot App](#3-install-the-github-copilot-app)
+  - [4. Connect GitHub Copilot to VS Code](#4-connect-github-copilot-to-vs-code)
+    - [Sign In to VS Code](#sign-in-to-vs-code)
+    - [Verify Copilot Chat and the Model Selector](#verify-copilot-chat-and-the-model-selector)
+  - [5. Configure MCP Servers](#5-configure-mcp-servers)
+    - [Recommended: Configure MCP with Copilot Chat](#recommended-configure-mcp-with-copilot-chat)
+    - [Install or Verify the MCP Prerequisites](#install-or-verify-the-mcp-prerequisites)
+    - [Authenticate WorkIQ with Microsoft Entra ID](#authenticate-workiq-with-microsoft-entra-id)
+    - [Add MCP Servers in VS Code](#add-mcp-servers-in-vs-code)
+      - [Optional: Add a Context7 Key Securely in VS Code](#optional-add-a-context7-key-securely-in-vs-code)
+    - [Validate MCP in VS Code](#validate-mcp-in-vs-code)
+  - [6. Install and Use GitHub Copilot CLI](#6-install-and-use-github-copilot-cli)
+    - [Confirm Copilot Access](#confirm-copilot-access)
+    - [Install the CLI with WinGet](#install-the-cli-with-winget)
+    - [Sign In and Select an Available Model](#sign-in-and-select-an-available-model)
+    - [Add MCP Servers with CLI Commands](#add-mcp-servers-with-cli-commands)
+      - [WorkIQ Authentication and Consent](#workiq-authentication-and-consent)
+    - [Validate MCP in Copilot CLI](#validate-mcp-in-copilot-cli)
+  - [7. Explore GitHub Copilot CLI](#7-explore-github-copilot-cli)
+  - [8. Join the Microsoft AI Community](#8-join-the-microsoft-ai-community)
+  - [9. Product Maker AI Workspace](#9-product-maker-ai-workspace)
+  - [Valuable Resources](#valuable-resources)
 
 ---
 
@@ -323,7 +344,7 @@ VS Code prompts for the key when the server starts and stores it securely. Do no
 
 [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) brings agentic assistance, file editing, command execution, and MCP tools into the terminal.
 
-![GitHub Copilot CLI running in Windows Terminal](images/gh_cli_terminal.png)
+![GitHub Copilot CLI running in Windows Terminal](images/gh_cli_terminal.jpg)
 
 ### Confirm Copilot Access
 
