@@ -106,7 +106,7 @@ Create a [personal GitHub account](https://github.com/) if you do not already ha
 
 ## 2. Set Up Your GitHub Copilot Enterprise License
 
-This is the critical step in the Microsoft FTE workflow.
+This is the **critical step** in the Microsoft FTE - Enterprise GHCP workflow.
 
 ![Overview of linking a Microsoft corporate identity to a personal GitHub account](images/GitHub_Copilot_Linking_Accounts.jpg)
 
