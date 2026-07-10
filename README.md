@@ -357,15 +357,22 @@ copilot --banner
 > [!WARNING]
 > Copilot CLI can read, modify, and run files in the current folder and its subfolders after you grant permission. Start it only in a trusted directory, review tool requests, and avoid session-wide approval for destructive or broadly scoped commands.
 
-### Sign In and Select an Available Model
+### Select an Available Model and Sign In
 
+1. Open the current model list:
+
+   ```text
+   /model
+   ```
+
+1. Choose a model shown as available to your account. Do not rely on a model name copied from a guide; availability varies by policy and changes over time.
 1. If prompted, enter `/login` and follow the GitHub sign-in flow with the personal GitHub account linked to your Microsoft corporate identity.
 
    ```text
    /login
    ```
 
-   ![GitHub Copilot CLI login prompt](https://github.com/user-attachments/assets/4e4bf471-b315-4fd5-a3de-6d3cf13f81da)
+   ![GitHub Copilot CLI login prompt](images/gh_cli_terminal_login.jpg)
 
 1. Immediately after GitHub sign-in, start the separate WorkIQ Microsoft Entra ID flow if it is not already cached:
 
@@ -374,13 +381,6 @@ copilot --banner
   ```
 
 1. Select your Microsoft corporate account in Windows Web Account Manager or the Entra browser window.
-1. Open the current model list:
-
-   ```text
-   /model
-   ```
-
-1. Choose a model shown as available to your account. Do not rely on a model name copied from a guide; availability varies by policy and changes over time.
 
 > [!NOTE]
 > Copilot CLI owns `/login`, and that slash command authenticates GitHub rather than Microsoft 365. An MCP configuration cannot replace its endpoint. This guide deliberately launches `workiq auth login` immediately afterward so every new setup completes the required Microsoft Entra ID route as the second sign-in.
