@@ -18,7 +18,7 @@ You need:
 Optional: [join the Microsoft AI community](https://aka.ms/garage/skillupai/viva) for peer support and events.
 
 ## Contents
-
+<!-- no toc -->
 - [🏆 GitHub Copilot Enterprise and CLI for Microsoft FTEs](#-github-copilot-enterprise-and-cli-for-microsoft-ftes)
 - [Before You Start](#before-you-start)
 - [Optional: Use a Microsoft Dev Box](#optional-use-a-microsoft-dev-box)
@@ -87,7 +87,7 @@ Create a [personal GitHub account](https://github.com/) if you do not already ha
 
 ## 2. Set Up Your GitHub Copilot Enterprise License
 
-This is the **critical step** in the Microsoft FTE - Enterprise GHCP workflow.
+This is the ![critical step](images/critical-step.svg) in the Microsoft FTE - Enterprise GHCP workflow.
 
 ![Overview of linking a Microsoft corporate identity to a personal GitHub account](images/GitHub_Copilot_Linking_Accounts.jpg)
 
