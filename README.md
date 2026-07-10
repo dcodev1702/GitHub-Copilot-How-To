@@ -1,10 +1,39 @@
-# 🏆 GitHub Copilot Enterprise | GitHub Copilot CLI for Microsoft FTEs
+# 🏆 GitHub Copilot Enterprise and CLI for Microsoft FTEs
 
-This beginner-friendly guide walks you through setting up your GitHub Copilot Enterprise license and employ the latest frontier models in **VS Code**, **GitHub Copilot Desktop Application**, and **GitHub Copilot CLI** to include, how to configure **MCP servers** (Model Context Protocol) for richer, tool-backed experience.
+This beginner-friendly guide walks Microsoft full-time employees (FTEs) through linking a GitHub Copilot Enterprise license, signing in to the **GitHub Copilot app**, **Visual Studio Code**, and **GitHub Copilot CLI**, and adding trusted **Model Context Protocol (MCP) servers** for tool-backed assistance.
+
+> [!NOTE]
+> Last verified: **July 9, 2026**. Product interfaces, available models, and enterprise policies change over time. When the guide and the product differ, follow the current product prompt and linked official documentation.
+
+## Before You Start
+
+You need:
+
+- A Windows 10 or Windows 11 computer, or access to a Microsoft Dev Box.
+- Your Microsoft corporate identity and access to the internal account-linking sites used in section 2.
+- A personal GitHub account. You can create one in section 1 if needed.
+- Permission to install software. Some managed devices might require administrator approval.
+- Windows Package Manager (`winget`). Run `winget --version` in a terminal to confirm it is available.
+
+Optional: [join the Microsoft AI community](https://aka.ms/garage/skillupai/viva) for peer support and events.
+
+## Contents
+
+- [Optional: Use a Microsoft Dev Box](#optional-use-a-microsoft-dev-box)
+- [1. Install PowerShell, VS Code, and Create a GitHub Account](#1-install-powershell-vs-code-and-create-a-github-account)
+- [2. Set Up Your GitHub Copilot Enterprise License](#2-set-up-your-github-copilot-enterprise-license)
+- [3. Install the GitHub Copilot App](#3-install-the-github-copilot-app)
+- [4. Connect GitHub Copilot to VS Code](#4-connect-github-copilot-to-vs-code)
+- [5. Configure MCP Servers](#5-configure-mcp-servers)
+- [6. Install and Use GitHub Copilot CLI](#6-install-and-use-github-copilot-cli)
+- [7. Explore GitHub Copilot CLI](#7-explore-github-copilot-cli)
+- [8. Join the Microsoft AI Community](#8-join-the-microsoft-ai-community)
+- [9. Product Maker AI Workspace](#9-product-maker-ai-workspace)
+- [Valuable Resources](#valuable-resources)
 
 ---
 
-## OPTIONAL: Create a Dev Box to employ GHCP | GHCP Desktop | GHCP CLI
+## Optional: Use a Microsoft Dev Box
 
 If your personal hardware is older, storage-constrained, or already working hard during GenAI-assisted workflows, consider setting up a Microsoft Dev Box before starting this guide. A Dev Box gives you an "always on" cloud workstation where VS Code, GitHub Copilot, terminal sessions, MCP servers, and automation can run without taxing your local CPU, memory, storage, or battery. Because the workspace lives in the cloud, it can meet you wherever you have an Internet connection, whether you connect from your laptop, another device, the Windows App, or a browser.
 
@@ -12,327 +41,433 @@ Start here: [Microsoft Dev Box Enablement Guide](devbox-enablement.md)
 
 ---
 
-## 1. Install PowerShell 7, Visual Studio Code, and create a personal GitHub (GH) account (if needed)
+## 1. Install PowerShell, VS Code, and Create a GitHub Account
 
-1. **JOIN THE [COMMUNITY](https://aka.ms/garage/skillupai/viva)** 🔥🔥🔥🔥
-		
-2. Install **PowerShell 7** from the 🖥️ 'Terminal' (CLI)
-   ```powershell
-   # Install PowerShell 7 (silently / non-interactive)
-   winget install --id Microsoft.PowerShell --source winget --silent --accept-package-agreements --accept-source-agreements
-   ```
+### Install PowerShell 7
 
-   * Set **PowerShell 7** as the default profile:
-   * Open **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell 7** → **Save**
+Run this command from Windows Terminal or another command-line shell:
 
-	![image](https://github.com/user-attachments/assets/4373aee1-5007-43ff-ae3b-3dcd068ade77)
+```powershell
+# Install PowerShell 7 (silently / non-interactive)
+winget install --id Microsoft.PowerShell --exact --source winget --silent --accept-package-agreements --accept-source-agreements
+```
 
-	![image](images/pwsh_7_terminal.jpg)
+Set **PowerShell 7** as the default profile: open **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell 7** → **Save**.
 
-3. Install VSCode: https://code.visualstudio.com/
-   ```powershell
-   # Install VS Code (silently / non-interactively)
-   winget install Microsoft.VisualStudioCode --source winget --silent --accept-package-agreements --accept-source-agreements
-   ```
+![PowerShell 7 selected as the default Windows Terminal profile](https://github.com/user-attachments/assets/4373aee1-5007-43ff-ae3b-3dcd068ade77)
 
+![PowerShell 7 running in Windows Terminal](images/pwsh_7_terminal.jpg)
+
+### Install Visual Studio Code
+
+```powershell
+# Install VS Code (silently / non-interactively)
+winget install --id Microsoft.VisualStudioCode --exact --source winget --silent --accept-package-agreements --accept-source-agreements
+```
+
+### Secure Your Personal GitHub Account
 
 > [!IMPORTANT]
-> 🔐 Keep your personal GitHub account secure (strong password + 2FA or Passkey) - SFI! </br>
-> 🔥 Linking your **personal GitHub account** with your **Microsoft FTE account** is the most critical step in this entire process.
+> Keep your personal GitHub account secure with a strong password and either two-factor authentication (2FA) or a passkey. Linking this personal GitHub account to your Microsoft corporate identity is required for the FTE licensing workflow in section 2.
 
-4. Create a personal GitHub account: https://github.com/
-   * Install the GitHub Mobile app on your mobile device and login. 📱
-   * Enable 2FA (two-factor authentication) on your GitHub account.
-     * **🟢 GitHub Profile (upper right) → Settings  → Password & Authentication → Enable MFA & set perferred method 🟢**
-     * Recommended: configure 2FA so you can approve sign-ins from the mobile app. See the [GitHub 2FA docs](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
-  
-  ![image](images/GH_Enable_MFA.jpg)
+Create a [personal GitHub account](https://github.com/) if you do not already have one, then:
 
----
+- Optionally install GitHub Mobile on your mobile device and sign in.
+- Enable 2FA: **GitHub profile → Settings → Password and authentication → Enable 2FA**.
+- Choose your preferred authentication method and store your recovery codes securely. See the [GitHub 2FA documentation](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
 
-## 2. **CRITICAL STEP** - Set up GitHub Copilot Enterprise License (Microsoft FTE workflow)
+![GitHub password and authentication settings with two-factor authentication enabled](images/GH_Enable_MFA.jpg)
 
-![image](images/GitHub_Copilot_Linking_Accounts.jpg)
-
-### 🔗 Link your Microsoft corporate identity (alias_microsoft) with your personal GitHub account
-
-‼️ Link the two accounts: https://copilot.github.microsoft.com/  <br/>
-   * Validate your accounts are linked: https://repos.opensource.microsoft.com/link
-
-  ![image](images/GitHub_Copilot_Linking_Accounts_2.jpg)
-
-**🟢 GITHUB PROFILE → SETTINGS → BILLING/LICENSING → LICENSING: YOU SHOULD SEE THIS 🟢**
-![image](images/GHCP_Enterprise_License.jpg)
-
-
-> [!NOTE]
-> **If additional assistance is required**, follow this walkthrough (VS Code + Copilot setup): <br/>
-> https://github.com/mcaps-microsoft/Getting-Started-with-GitHub-Copilot-and-VSCode/blob/main/Getting_Started_with_GitHub_Copilot_and_VSCode.md <br/>
+> [!TIP]
+> **Done when:** `pwsh --version` and `code --version` both return installed versions, and your personal GitHub account has 2FA or a passkey configured.
 
 ---
 
-## 3. Install the GitHub Copilot Desktop Application
+## 2. Set Up Your GitHub Copilot Enterprise License
+
+This is the critical step in the Microsoft FTE workflow.
+
+![Overview of linking a Microsoft corporate identity to a personal GitHub account](images/GitHub_Copilot_Linking_Accounts.jpg)
+
+### Link Your Microsoft and GitHub Accounts
+
+1. Open the [Microsoft GitHub Copilot account-linking site](https://copilot.github.microsoft.com/).
+1. Sign in with your Microsoft corporate identity when prompted.
+1. Link the personal GitHub account that you secured in section 1.
+1. Open the [Microsoft Open Source portal](https://repos.opensource.microsoft.com/link) and confirm that the accounts are linked.
+
+![Confirmation page for linked Microsoft and GitHub accounts](images/GitHub_Copilot_Linking_Accounts_2.jpg)
+
+In GitHub, open **Profile → Settings → Billing and licensing → Licensing** and confirm that your Copilot Enterprise license appears.
+
+![GitHub Copilot Enterprise license in GitHub billing and licensing settings](images/GHCP_Enterprise_License.jpg)
+
+For more help, follow the [Microsoft walkthrough for GitHub Copilot and VS Code](https://github.com/mcaps-microsoft/Getting-Started-with-GitHub-Copilot-and-VSCode/blob/main/Getting_Started_with_GitHub_Copilot_and_VSCode.md).
+
+> [!TIP]
+> **Done when:** the Open Source portal confirms the account link and GitHub shows an active Copilot Enterprise license.
+
+---
+
+## 3. Install the GitHub Copilot App
 
 The [GitHub Copilot app](https://github.com/features/ai/github-app) gives you a dedicated desktop experience for GitHub Copilot outside the browser and VS Code.
 
 1. Go to the [GitHub Copilot app download page](https://github.com/features/ai/github-app).
-2. Download and install the GitHub Copilot desktop app for your operating system.
-3. Open the app and sign in with the **personal GitHub account** that you linked to your Microsoft corporate account.
-4. Confirm that Copilot recognizes your Enterprise license and that the model selector is available.
+1. Download and install the app for your operating system.
+1. Open the app and sign in with the **personal GitHub account** linked to your Microsoft corporate identity.
+1. Confirm that Copilot recognizes your Enterprise license and displays a model selector.
 
-![image](images/GHCP_Desktop_Application.jpg)
+![GitHub Copilot app signed in and ready for an agent session](images/GHCP_Desktop_Application.jpg)
 
 > [!TIP]
-> If Copilot does not recognize your license, return to https://copilot.github.microsoft.com/ and confirm your personal GitHub account is linked and eligible.
+> **Done when:** the app accepts your linked personal GitHub account and can start a Copilot session. If the license is not recognized, return to the [account-linking site](https://copilot.github.microsoft.com/) and confirm eligibility.
 
 ---
 
+## 4. Connect GitHub Copilot to VS Code
 
-## 4. VS Code integration with GitHub Copilot
-
-### 💻 Sign in to VS Code
+### Sign In to VS Code
 
 1. In VS Code, open **Accounts** (person icon) → sign in.
-2. Sign in using the **personal GitHub account** that you linked to your Microsoft corporate account.
+1. Sign in using the **personal GitHub account** linked to your Microsoft corporate identity.
 
-![image](https://github.com/user-attachments/assets/5b7554c5-b423-498f-a779-0856933fd349)
+![VS Code Accounts menu used to sign in with GitHub](https://github.com/user-attachments/assets/5b7554c5-b423-498f-a779-0856933fd349)
+
+### Verify Copilot Chat and the Model Selector
+
+1. Open the **GitHub Copilot Chat** panel from the chat icon near the top of VS Code.
+1. Open the model selector and confirm that it lists at least one model approved by your organization.
+1. Send a simple prompt, such as `Explain what you can help me do in this workspace.`
+
+![GitHub Copilot model selector in VS Code](images/GHCP_Model_Selection.jpg)
+
+The exact model list varies by plan, enterprise policy, region, and rollout date. Seeing the model selector and at least one approved model is the reliable success criterion; the screenshot is illustrative.
+
+> [!TIP]
+> **Done when:** Copilot Chat answers a prompt and the model selector shows at least one model available to your account.
 
 ---
 
-### Verify GitHub Copilot Chat + model selector
+## 5. Configure MCP Servers
 
-1. Open the **GitHub Copilot Chat** panel (chat icon near the top right, next to the search bar area).
-2. You should see multiple Frontier models available (for example: **GPT-5.5**, **Claude Sonnet 5**, **Claude Opus 4.8**, **Gemini 3.1 Pro**, etc.).
-3. If you do — CONGRATULATIONS!! 👏👏👏
-   * You’re now ready to use GitHub Copilot with latest foundation models.
+MCP is an open standard that connects an AI model to external tools and data sources. In this guide, Microsoft Learn and Context7 provide documentation, WorkIQ connects Microsoft FTEs to authorized Microsoft 365 work context, and Playwright can navigate and interact with web pages.
 
-**🟢 VS CODE: YOU SHOULD SEE THIS 🟢**
-![image](images/GHCP_Model_Selection.jpg)
+> [!WARNING]
+> An MCP server is code or a remote service that Copilot can call on your behalf. A local `stdio` server runs with your user permissions, and a remote server can receive data included in tool requests. Install only servers from publishers you trust and review the package name, command, URL, and available tools before approval. WorkIQ can access Microsoft 365 work data permitted by your identity and tenant policy; use its results according to Microsoft data-handling requirements. Packages referenced with `@latest` can change, so pin a tested version when repeatability matters.
 
----
+### Recommended: Configure MCP with Copilot Chat
 
-## 4.5 Use Gen AI to add & configure MCP Servers (GHCP & GHCP CLI)
+Paste the following prompt into Copilot Chat. It requires Copilot to explain security-sensitive actions and validate each server rather than silently editing configuration files.
 
-MCP stands for **Model Context Protocol**, a standard way for an LLM to connect to external tools, resources, and data sources. Think of MCP like a USB hub for your LLM: it gives GitHub Copilot a consistent way to plug into different capabilities such as documentation lookup, web navigation, browser automation, and enterprise services. With MCP enabled, GitHub Copilot can use trusted servers to retrieve grounded information and perform tool-backed actions from VS Code or the Copilot CLI.
+```text
+Use this README as the setup guide:
+https://github.com/dcodev1702/GitHub-Copilot-How-To/blob/main/README.md
 
-### Configure MCP with GitHub Copilot Chat
+Start from section 5 and work one step at a time.
 
-At this point -- it is far easier to select your desired foundation model and simply PROMPT GitHub Copilot to install the MCP prerequisites, configure your MCP servers, and install GitHub Copilot CLI.
+1. Verify Node.js LTS and Git for Windows, and offer to install missing tools.
+2. Ask before running an elevated command.
+3. Use the VS Code MCP gallery or MCP commands instead of hard-coded paths.
+4. Configure Microsoft Learn, keyless Context7, and WorkIQ by default.
+5. After Copilot CLI /login, immediately start WorkIQ authentication with
+  npx -y @microsoft/workiq auth login. Use my Microsoft corporate identity
+  through Microsoft Entra ID. Use Windows Web Account Manager or browser
+  authentication, never device-code authentication.
+6. Show me the WorkIQ EULA and ask me to accept it; do not accept it for me.
+7. If WorkIQ requires tenant admin consent, stop and show me the official
+  tenant administrator enablement guide.
+8. Treat Playwright as optional. Before adding any local server,
+   show me its publisher, package, command, URL, and requested tools.
+9. Never ask me to paste a secret into chat or write one directly into JSON.
+10. Validate each server, show its tools, and report any startup errors.
 
-```console
-# Provide the PROMPT below, inside GitHub Copilot Chat
-
-Use the following README as the setup guide: https://github.com/dcodev1702/GitHub-Copilot-How-To/blob/main/README.md
-
-Start from section 4.5 of the README.md. Install or verify the MCP prerequisites, including Node.js LTS, Git for Windows, and the Context7 account/API key setup. Then configure MCP servers for GitHub Copilot in VS Code and GitHub Copilot CLI using the JSON examples contained in the README. DO NOT configure PAW (# 8) in the README. Lastly, validate for correctness and prompt me for elevated authentication as required.
+Do not configure Product Maker AI Workspace in section 9.
 ```
 
+![Copilot Chat prompt used to configure MCP prerequisites and servers](images/MCP_Config_via_Prompt.jpg)
 
-![Prompt-To-MCP](images/MCP_Config_via_Prompt.jpg)
+### Install or Verify the MCP Prerequisites
 
-### MCP prerequisites the prompt will install or verify
+Use the LTS release of Node.js. Avoid hard-coding the numbered "Current" release in setup instructions because its support status changes frequently.
 
-The prompt above should install or verify Node.js and Git, then guide you through Context7 account/API key setup. Use the commands below only if you want to perform the prerequisite setup manually.
+1. Install [Node.js LTS](https://nodejs.org/en):
 
-1. Install NodeJS: https://nodejs.org/en
    ```powershell
-   # Latest LTS (recommended) (silently / non-interactively)
-   winget install OpenJS.NodeJS.LTS --source winget --silent --accept-package-agreements --accept-source-agreements
+   winget install --id OpenJS.NodeJS.LTS --exact --source winget --silent --accept-package-agreements --accept-source-agreements
    ```
-   Or you can install the latest - Current (25.x)
+
+1. Install [Git for Windows](https://git-scm.com/install/windows):
+
    ```powershell
-   winget install OpenJS.NodeJS --source winget --silent --accept-package-agreements --accept-source-agreements
+   winget install --id Git.Git --exact --source winget --silent --accept-package-agreements --accept-source-agreements
    ```
-2. Install Git for Windows: https://git-scm.com/install/windows
+
+1. Close and reopen the terminal, then verify both tools:
+
    ```powershell
-   winget install --id Git.Git -e --source winget --silent --accept-package-agreements --accept-source-agreements
+   node --version
+   npm --version
+   git --version
    ```
-3. Create & Obtain Context7 API KEY
-   - Go to context7: https://context7.com/ and create an account to obtain an API KEY </br>
-   - Be sure to retain your API Key for MCP configuration later on. </br>
-   - Sign-Up/Sign-In to Context7 using your account preference (GMail / GitHub)
 
-### MCP Manual Setup (w/o using a prompt)
+A Context7 API key is optional and provides higher rate limits. Start without one. If you later need a key, create it in the [Context7 dashboard](https://context7.com/dashboard), keep it out of chat and source control, and use the secure VS Code input described below.
 
-![image](https://github.com/user-attachments/assets/efe890e8-b2f0-45f8-9043-9d27c25f6ad8)
+### Authenticate WorkIQ with Microsoft Entra ID
 
-#### Model Context Protocol (MCP) File path for VS Code
+WorkIQ and GitHub Copilot use separate identities. GitHub Copilot signs in with the linked personal GitHub account, while WorkIQ signs in to Microsoft 365 through Microsoft Entra ID with your Microsoft corporate identity.
 
-Create or edit this file:
+1. Review the [WorkIQ license terms](https://github.com/microsoft/work-iq) and explicitly accept the EULA:
 
-* `C:\Users\%USERNAME%\AppData\Roaming\Code\User\mcp.json`
+  ```powershell
+  npx -y @microsoft/workiq accept-eula
+  ```
 
-#### Copy/paste this JSON into `mcp.json`
+1. Start the WorkIQ Microsoft Entra ID sign-in:
 
-> [!NOTE]
-> The format / structure for mcp.json is **different** than mcp-config.json (GitHub Copilot CLI)
+  ```powershell
+  npx -y @microsoft/workiq auth login
+  ```
+
+1. Select your Microsoft corporate account. On Windows, WorkIQ 1.0 uses Windows Web Account Manager (WAM) and falls back to browser-based Entra authentication when needed.
+1. If an administrator-consent dialog appears, follow the official [WorkIQ tenant administrator enablement guide](https://github.com/microsoft/work-iq/blob/main/ADMIN-INSTRUCTIONS.md). If you are not a tenant administrator, send that guide to your administrator rather than attempting another authentication method.
+
+> [!IMPORTANT]
+> Do not use device-code authentication or paste tokens into chat or configuration files. WorkIQ caches the Entra authentication for its CLI and MCP server. Conditional Access and tenant consent policies still apply.
+
+### Add MCP Servers in VS Code
+
+The product commands account for VS Code profiles, remote sessions, and Dev Boxes more reliably than navigating to a hard-coded Windows path.
+
+1. Open the Extensions view and search for `@mcp` to browse the MCP gallery. Review the publisher before installing a server such as Playwright.
+1. Run **MCP: Add Server** from the Command Palette to add a server through a guided flow.
+1. Run **MCP: Open User Configuration** to inspect the profile-specific `mcp.json` file. Choose user configuration for all workspaces or `.vscode/mcp.json` only when the configuration should be shared with one trusted repository.
+
+![VS Code interface for adding and configuring MCP servers](https://github.com/user-attachments/assets/efe890e8-b2f0-45f8-9043-9d27c25f6ad8)
+
+For manual setup, the following is a keyless, user-level starting configuration:
+
 ```json
 {
-    "servers": {
-        "playwright": {
-            "command": "npx",
-            "args": [
-                "@playwright/mcp@latest"
-            ],
-   "type": "stdio"
+  "servers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
+    "workIQ": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@microsoft/workiq", "mcp"]
+    },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "microsoftLearn": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    }
   },
-  "context7": {
-   "type": "http",
-   "url": "https://mcp.context7.com/mcp",
-   "headers": {
-    "CONTEXT7_API_KEY": "ADD_YOUR_API_KEY_HERE"
-   }
-  },
-  "Microsoft Learn - MCP": {
-   "type": "http",
-   "url": "https://learn.microsoft.com/api/mcp",
-   "gallery": "https://api.mcp.github.com",
-   "version": "1.0.0"
-  }
- },
- "inputs": []
+  "inputs": []
 }
 ```
 
-Provide Context7 API KEY
-- Replace "ADD_YOUR_API_KEY_HERE" with your actual API Key
+> [!NOTE]
+> VS Code uses a top-level `servers` object. GitHub Copilot CLI uses `mcpServers`; do not copy one product's complete configuration file over the other.
 
-Optional next steps (common troubleshooting):
+#### Optional: Add a Context7 Key Securely in VS Code
 
-* Restart VS Code after editing `mcp.json`.
-* If a server requires Node, install a recent Node.js LTS.
-* If a tool requires corporate access (tenant / permissions), it may not work outside your environment.
-* 
+Replace the `context7` server object with this version:
+
+```json
+{
+  "type": "http",
+  "url": "https://mcp.context7.com/mcp",
+  "headers": {
+    "CONTEXT7_API_KEY": "${input:context7-api-key}"
+  }
+}
+```
+
+Then replace the top-level `"inputs": []` value with this array:
+
+```json
+[
+  {
+    "type": "promptString",
+    "id": "context7-api-key",
+    "description": "Context7 API key",
+    "password": true
+  }
+]
+```
+
+VS Code prompts for the key when the server starts and stores it securely. Do not replace the input variable with the literal key.
+
+### Validate MCP in VS Code
+
+1. Run **MCP: List Servers** from the Command Palette.
+1. Start each server individually. Review its configuration and tools before confirming trust.
+1. If a server fails, select **Show Output** and resolve the reported startup or authentication error.
+1. In Copilot Chat, select **Configure Tools** and leave unnecessary tools disabled.
+1. Test a documentation server with `Find the current VS Code MCP security guidance using Microsoft Learn.`
+1. Test WorkIQ with a permitted work-context request, such as `Using WorkIQ, show my next meeting.`
+
+> [!TIP]
+> **Done when:** VS Code lists WorkIQ and the documentation servers as running, WorkIQ authenticates with your Microsoft corporate identity, the expected tools are visible, and test prompts return tool-backed responses without exposing a secret.
 
 ---
 
-## 5. Install GitHub Copilot CLI
+## 6. Install and Use GitHub Copilot CLI
 
-## What can [GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) do for you!?
+[GitHub Copilot CLI](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli) brings agentic assistance, file editing, command execution, and MCP tools into the terminal.
 
-![GH CLI Terminal](images/gh_cli_terminal.png)
+![GitHub Copilot CLI running in Windows Terminal](images/gh_cli_terminal.png)
 
-### Confirm Copilot access
+### Confirm Copilot Access
 
-1. Go to [Github Copilot](https://copilot.github.microsoft.com/)
-2. Confirm it recognizes you as connected/eligible for GitHub Copilot.
+1. Open the [Microsoft GitHub Copilot account-linking site](https://copilot.github.microsoft.com/).
+1. Confirm that it recognizes your linked account as eligible for GitHub Copilot.
 
-### Install GitHub Copilot CLI via winget
+### Install the CLI with WinGet
 
-Open **PowerShell 7** and run:
+Open PowerShell 7 and run:
 
 ```powershell
-winget install github.copilot
+winget install --id GitHub.Copilot --exact --source winget
+copilot --version
 ```
 
-Run **GitHub Copilot CLI**
+Start the CLI in a folder containing code you trust:
 
 ```powershell
 copilot
 ```
 
-Run **GitHub Copilot CLI w/ the fancy banner 😎**
+To include the optional banner:
 
 ```powershell
 copilot --banner
 ```
 
-### Sign in and select a model
+> [!WARNING]
+> Copilot CLI can read, modify, and run files in the current folder and its subfolders after you grant permission. Start it only in a trusted directory, review tool requests, and avoid session-wide approval for destructive or broadly scoped commands.
 
-1. Open the Copilot CLI experience and sign in when prompted.
+### Sign In and Select an Available Model
 
-```text
-/login
+1. If prompted, enter `/login` and follow the GitHub sign-in flow with the personal GitHub account linked to your Microsoft corporate identity.
+
+   ```text
+   /login
+   ```
+
+   ![GitHub Copilot CLI login prompt](https://github.com/user-attachments/assets/4e4bf471-b315-4fd5-a3de-6d3cf13f81da)
+
+1. Immediately after GitHub sign-in, start the separate WorkIQ Microsoft Entra ID flow if it is not already cached:
+
+  ```powershell
+  npx -y @microsoft/workiq auth login
+  ```
+
+1. Select your Microsoft corporate account in Windows Web Account Manager or the Entra browser window.
+1. Open the current model list:
+
+   ```text
+   /model
+   ```
+
+1. Choose a model shown as available to your account. Do not rely on a model name copied from a guide; availability varies by policy and changes over time.
+
+> [!NOTE]
+> Copilot CLI owns `/login`, and that slash command authenticates GitHub rather than Microsoft 365. An MCP configuration cannot replace its endpoint. This guide deliberately launches `workiq auth login` immediately afterward so every new setup completes the required Microsoft Entra ID route as the second sign-in.
+
+### Add MCP Servers with CLI Commands
+
+The GitHub MCP server is built into Copilot CLI. Add other servers with `copilot mcp add` so the CLI writes to the correct user configuration location.
+
+Add Microsoft Learn with its three documentation tools:
+
+```powershell
+copilot mcp add --transport http --tools "microsoft_docs_search,microsoft_code_sample_search,microsoft_docs_fetch" MicrosoftLearn https://learn.microsoft.com/api/mcp
 ```
 
-![image](https://github.com/user-attachments/assets/4e4bf471-b315-4fd5-a3de-6d3cf13f81da)
+Add Context7 without an API key and enable its two documentation tools:
 
----
-
-2. Select your preferred model. Example (as used in many demos):
-
-```text
-/model claude-opus-4.8
+```powershell
+copilot mcp add --transport http --tools "resolve-library-id,query-docs" Context7 https://mcp.context7.com/mcp
 ```
+
+Add WorkIQ and enable its full tool set for Microsoft FTE workflows:
+
+```powershell
+copilot mcp add --tools "*" WorkIQ -- npx -y @microsoft/workiq mcp
+```
+
+Optionally add Playwright with a small starter set of browser tools:
+
+```powershell
+copilot mcp add --tools "browser_navigate,browser_snapshot,browser_take_screenshot" Playwright -- npx -y @playwright/mcp@latest
+```
+
+The WorkIQ command intentionally enables all published WorkIQ tools so the full Microsoft FTE experience is available. The current package includes read and write operations, so after installation or a package update, use `/mcp show WorkIQ` to review the active tools and continue approving consequential actions individually. For other servers, use `/mcp edit SERVER-NAME` to enable only the tools needed for the task.
+
+> [!IMPORTANT]
+> Context7 works without a key at lower rate limits. If you add a key through `/mcp edit Context7`, Copilot CLI writes the header to its local `~/.copilot/mcp-config.json` configuration. On Windows, this is normally `%USERPROFILE%\.copilot\mcp-config.json`. Treat that file as sensitive: never commit, sync, paste, or share it, and rotate the key if it is exposed.
+
+#### WorkIQ Authentication and Consent
+
+WorkIQ reuses the cached Microsoft Entra ID session established by `workiq auth login`. If the session expires or a different tenant is required, run the login command again and select the correct corporate account. WorkIQ returns only data allowed by your account and tenant policy, but that data can still be sensitive. Keep work-derived results in approved Microsoft systems and follow the classification and sharing rules that apply to the source content.
+
+### Validate MCP in Copilot CLI
+
+Run these commands outside an interactive session:
+
+```powershell
+copilot mcp list
+copilot mcp get MicrosoftLearn
+copilot mcp get Context7
+copilot mcp get WorkIQ
+```
+
+Inside an interactive session, use `/mcp show` to inspect status and available tools. Test a documentation server, then ask `Using WorkIQ, show my next meeting` to confirm corporate authentication and Microsoft 365 access.
 
 > [!TIP]
-> If you’re not sure which command starts the CLI on your machine, run `copilot --help` after installation and follow the sign-in prompts it provides.
+> **Done when:** `copilot --version` succeeds, `/model` shows an available model, WorkIQ has an active Microsoft Entra ID session with any required tenant consent, `copilot mcp list` shows WorkIQ and the documentation servers, and test prompts invoke both a documentation tool and WorkIQ.
 
 ---
 
-### Configure MCP for Copilot CLI
+## 7. Explore GitHub Copilot CLI
 
-Create or edit this file:
+- Read the official [GitHub Copilot CLI how-to documentation](https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli).
+- Enter `?` in an interactive session to list slash commands.
+- Use plan mode before a complex change and review every proposed command.
+- Resume recent work with `copilot --continue` when appropriate.
 
-* `C:\Users\%USERNAME%\.copilot\mcp-config.json`
+## 8. Join the Microsoft AI Community
 
-Copy/paste this JSON into `mcp-config.json` (Context7 key omitted):
-
-```json
-{
-  "mcpServers": {
-    "WorkIQ": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@microsoft/workiq",
-        "mcp"
-      ],
-      "tools": ["*"]
-    },
-    "MicrosoftLearn": {
-      "type": "http",
-      "url": "https://learn.microsoft.com/api/mcp",
-      "tools": ["*"]
-    },
-    "Playwright": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["@playwright/mcp@latest"],
-      "tools": ["*"]
-    },
-    "Context7": {
-      "type": "http",
-      "url": "https://mcp.context7.com/mcp",
-      "headers": {
-        "CONTEXT7_API_KEY": "ADD_YOUR_API_KEY_HERE"
-      },
-      "tools": ["*"]
-    }
-  }
-}
-```
+- Join the [Microsoft AI Community of Interest](https://aka.ms/garage/skillupai).
+- Watch Scott Hanselman use GitHub Copilot CLI with MCP, Copilot Skills, and [Handy](https://handy.computer/).
 
 ---
 
-## 6. GitHub Copilot CLI How-To's
+## 9. Product Maker AI Workspace
 
-* https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli
+Product Maker AI Workspace (PAW) is an advanced, optional workflow that builds on the GitHub Copilot Enterprise setup in this guide.
 
-## 7. Join the Microsoft AI Community of Interest
-
-* https://aka.ms/garage/skillupai
-* Watch Scott Hanselman harness the power of GitHub Copilot CLI w/ MCP and Copilot Skills & [Handy](https://handy.computer/)
-
----
-
-## 8. Product Maker AI Workspace (Advanced)
-
-Product Maker AI Workspace (PAW) helps you follow the end-to-end workflow for enabling your GitHub Copilot Enterprise license and using the PAW workflow.
-
-* ‼️ Video How-To: https://aka.ms/pawvideo <br/>
+- Watch the [PAW video how-to](https://aka.ms/pawvideo).
 
 ## Valuable Resources
 
-* [Jesse Vincent - **SUPERPOWERS** (supported by Anthropic (Claude))](https://github.com/obra/superpowers)
-* [Making Windows Terminal Awesome w/ GitHub Copilot CLI](https://developer.microsoft.com/blog/making-windows-terminal-awesome-with-github-copilot-cli)
-* [Awesome Agent Skills from leading Dev teams & Community](https://github.com/VoltAgent/awesome-agent-skills)
-* [Tim Myers - GenAI Spec Driven Development (SDD) Demo's](https://github.com/timothymeyers/sdd-demo-repo)
-* [Microsoft Teams MCP Reference](https://learn.microsoft.com/en-us/microsoft-agent-365/mcp-server-reference/teams)
-* [Microsoft GitHub Copilot SDK](https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/)
-* [Microsoft PowerShell Azure Module (Az)](https://learn.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-15.2.0)
-* [Microsoft Graph MCP Server overview](https://learn.microsoft.com/en-us/graph/mcp-server/overview)
-* [Microsoft Sentinel (data lake) MCP overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-overview)
-* [GitHub Copilot documentation](https://docs.github.com/en/copilot)
-* [John Saville YouTube Channel](https://www.youtube.com/@NTFAQGuy)
-* [Azure Friday's](https://azurefriday.com/)
+- [Jesse Vincent - **SUPERPOWERS** (supported by Anthropic)](https://github.com/obra/superpowers)
+- [Making Windows Terminal Awesome with GitHub Copilot CLI](https://developer.microsoft.com/blog/making-windows-terminal-awesome-with-github-copilot-cli)
+- [Awesome Agent Skills from leading development teams and the community](https://github.com/VoltAgent/awesome-agent-skills)
+- [Tim Myers - GenAI Spec-Driven Development demos](https://github.com/timothymeyers/sdd-demo-repo)
+- [Microsoft Teams MCP reference](https://learn.microsoft.com/en-us/microsoft-agent-365/mcp-server-reference/teams)
+- [Microsoft GitHub Copilot SDK](https://github.blog/news-insights/company-news/build-an-agent-into-any-app-with-the-github-copilot-sdk/)
+- [Microsoft PowerShell Azure module (Az)](https://learn.microsoft.com/en-us/powershell/azure/new-azureps-module-az?view=azps-15.2.0)
+- [Microsoft Graph MCP Server overview](https://learn.microsoft.com/en-us/graph/mcp-server/overview)
+- [Microsoft Sentinel data lake MCP overview](https://learn.microsoft.com/en-us/azure/sentinel/datalake/sentinel-mcp-overview)
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot)
+- [John Saville YouTube channel](https://www.youtube.com/@NTFAQGuy)
+- [Azure Friday](https://azurefriday.com/)
