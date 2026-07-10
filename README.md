@@ -19,8 +19,8 @@ Optional: [join the Microsoft AI community](https://aka.ms/garage/skillupai/viva
 
 ## Contents
 <!-- no toc -->
-- [🏆 GitHub Copilot Enterprise and CLI for Microsoft FTEs](#-github-copilot-enterprise-and-cli-for-microsoft-ftes)
 - [Before You Start](#before-you-start)
+- [Contents](#contents)
 - [Optional: Use a Microsoft Dev Box](#optional-use-a-microsoft-dev-box)
 - [1. Install PowerShell, VS Code, and Create a GitHub Account](#1-install-powershell-vs-code-and-create-a-github-account)
 - [2. Set Up Your GitHub Copilot Enterprise License](#2-set-up-your-github-copilot-enterprise-license)
