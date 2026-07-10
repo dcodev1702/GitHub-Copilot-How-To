@@ -47,7 +47,7 @@ Start here: [Microsoft Dev Box Enablement Guide](devbox-enablement.md)
 
 ### Install PowerShell 7
 
-Run this command from Windows Terminal or another command-line shell:
+Run this command from Windows Terminal:
 
 ```powershell
 # Install PowerShell 7 (silently / non-interactive)
