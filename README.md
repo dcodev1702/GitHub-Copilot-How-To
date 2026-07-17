@@ -57,7 +57,7 @@ winget install --id Microsoft.PowerShell --exact --source winget --silent --acce
 > [!IMPORTANT]
 > After PowerShell 7 has been installed, be sure to completely close 'Terminal' and open it back up again, otherwise you will not see the option to select 'PowerShell'
 
-Set **PowerShell 7** as the default profile: open **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell 7** → **Save**.
+Set **PowerShell 7** in your default profile: **Windows Terminal** → **Settings** → **Default profile** → select **PowerShell** → **Save**.
 
 ![PowerShell 7 selected as the default Windows Terminal profile](https://github.com/user-attachments/assets/4373aee1-5007-43ff-ae3b-3dcd068ade77)
 
