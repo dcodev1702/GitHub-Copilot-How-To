@@ -3,7 +3,7 @@
 This beginner-friendly guide walks Microsoft full-time employees (FTEs) through linking a GitHub Copilot Enterprise license, signing in to the **GitHub Copilot app**, **Visual Studio Code**, and **GitHub Copilot CLI**, and adding trusted **Model Context Protocol (MCP) servers** for tool-backed assistance.
 
 > [!NOTE]
-> Last verified: **July 10, 2026**. Product interfaces, available models, and enterprise policies change over time. When the guide and the product differ, follow the current product prompt and linked official documentation.
+> Last verified: **July 15, 2026**. Product interfaces, available models, and enterprise policies change over time. When the guide and the product differ, follow the current product prompt and linked official documentation.
 
 ## Before You Start
 
