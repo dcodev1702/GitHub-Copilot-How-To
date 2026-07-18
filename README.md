@@ -99,7 +99,9 @@ Create a [personal GitHub account](https://github.com/) if you do not already ha
 
 1. Open the [Microsoft GitHub Copilot account-linking site](https://copilot.github.microsoft.com/).
 1. Sign in with your Microsoft corporate identity when prompted.
-1. Link the personal GitHub account that you secured in section 1.
+1. Link your personal GitHub account that you secured in section 1.
+1. Ensure you complete the following steps of accepting the invitation and press the green button 'Get Copilot'
+1. Once you have completed the steps successfully, ensure your view looks exactly like the one above.  
 1. Open the [Microsoft Open Source portal](https://repos.opensource.microsoft.com/link) and confirm that the accounts are linked.
 
 ![Confirmation page for linked Microsoft and GitHub accounts](images/GitHub_Copilot_Linking_Accounts_2.jpg)
